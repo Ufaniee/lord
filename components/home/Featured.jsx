@@ -1,5 +1,6 @@
 import React from 'react'
 import Timing from '../Timing'
+import FeaturedSlider from '../sliders/FeaturedSlider'
 
 const featuredProducts = [
     { name: 'Wireless Microphone', price: 29.99, promoPrice: 19.99 },
@@ -9,12 +10,12 @@ const featuredProducts = [
 
 const Featured = () => {
   return (
-    <section className='my-20'>
+    <section className='lg:my-20 my-0'>
         <div className='text-center my-10'>
             <h2 className='text-3xl text-colorBold font-semibold'>Featured Products</h2>
             <p className='text-gray'>Be the first to see new products dropped daily!12:15</p>
         </div>
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='hidden lg:grid grid-cols-2 gap-4'>
             {featuredProducts.map((item, index) => (
                     index === 0 ? (
                         <div key={0} className='row-span-2 flex flex-col items-center justify-center gap-4 border border-gray rounded-3xl'>
@@ -40,6 +41,7 @@ const Featured = () => {
                     )
             ))}
         </div>
+        <FeaturedSlider featuredProducts={featuredProducts}/>
     </section>
   )
 }

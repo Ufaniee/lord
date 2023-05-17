@@ -1,18 +1,7 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Home from "@/components/home/Home";
 
-import TopHeader from '../components/home/TopHeader'
-import TopNav from '../components/home/TopNav'
-import NavBar from '../components/home/NavBar'
-import HeroSection from '../components/home/HeroSection'
-import Category from '../components/home/Category'
-import NewArrival from '../components/home/NewArrival'
-import Featured from '../components/home/Featured'
-import Collections from '../components/home/Collections'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+export default function Main() {
   return (
     // <main
     //   className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
@@ -124,15 +113,6 @@ export default function Home() {
     //   </div>
     //   <Home/>
     // </main>
-    <div className='w-[90%] mx-auto'>
-    <TopHeader/>
-    <TopNav/>
-    <NavBar/>
-    <HeroSection/>
-    <Category/>
-    <NewArrival/>
-    <Featured/>
-    <Collections/>
-</div>
+      <Home/>
     )
 }
