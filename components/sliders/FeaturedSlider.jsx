@@ -22,10 +22,10 @@ const FeaturedSlider = ({ featuredProducts }) => {
 			centeredSlides={true}
 			spaceBetween={20}
 			grabCursor={true}
-			autoplay={{
-				delay: 2500,
-				disableOnInteraction: false,
-			  }}
+			// autoplay={{
+			// 	delay: 2500,
+			// 	disableOnInteraction: false,
+			//   }}
 			pagination={{
 				clickable: true,
 			}}

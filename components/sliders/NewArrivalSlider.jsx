@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,17 +21,16 @@ const NewArrivalSlider = ({ newArrival }) => {
 			centeredSlides={true}
 			spaceBetween={20}
 			grabCursor={true}
-			autoplay={{
-				delay: 2500,
-				disableOnInteraction: false,
-			  }}
+			// autoplay={{
+			// 	delay: 2500,
+			// 	disableOnInteraction: false,
+			//   }}
 			pagination={{
 				clickable: true,
 			}}
 			modules={[Pagination, Autoplay]}
 		>
 			{newArrival.map((item, index) => (
-                // 
 				<SwiperSlide key={index}>
 					<div className='flex flex-col items-center gap-2 border border-gray rounded-b-2xl pb-5'>
 						<div className='w-[350px] h-[250px] bg-gray relative'>

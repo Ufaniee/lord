@@ -32,7 +32,7 @@ const NavBar = () => {
       </div>
       
       {/* Mobile Navigation Bar */}
-      {click && <div className='lg:hidden flex flex-col w-full absolute hrefp-20 z-20 bg-[#fff] gap-10 justify-center items-center py-4 text-lg text-colorBold transition-all ease-in-out duration-500'>
+      {click && <div className='lg:hidden flex flex-col w-full absolute p-20 z-20 bg-[#fff] gap-10 justify-center items-center py-4 text-lg text-colorBold transition-all ease-in-out duration-500'>
           {navList.map((nav, index) => (
               <Link href={nav.link} key={index}>{nav.name}</Link>
           ))}
