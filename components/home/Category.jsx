@@ -1,13 +1,13 @@
 import Image from "next/image"
 
 const category = [
-  { img: '/categoryIcons/Laptop.svg', name: "Computer & Laptop" },
-  { img: '/categoryIcons/Smartphone.svg', name: "Mobile & Tablet" },
-  { img: '/categoryIcons/Camera.svg', name: "Camera" },
-  { img: '/categoryIcons/Tv-and-Remote.svg', name: "TV & Smart Box" },
-  { img: '/categoryIcons/Air-Conditioner.svg', name: "Home Appliances" },
-  { img: '/categoryIcons/Speaker.svg', name: "Accessories" },
-  { img: '/categoryIcons/Gamepad.svg', name: "Other Categories" },
+  { img: '/categoryIcons/laptop.svg', name: "Computer & Laptop" },
+  { img: '/categoryIcons/smartphone.svg', name: "Mobile & Tablet" },
+  { img: '/categoryIcons/camera.svg', name: "Camera" },
+  { img: '/categoryIcons/tv-and-remote.svg', name: "TV & Smart Box" },
+  { img: '/categoryIcons/air-conditioner.svg', name: "Home Appliances" },
+  { img: '/categoryIcons/speaker.svg', name: "Accessories" },
+  { img: '/categoryIcons/gamepad.svg', name: "Other Categories" },
 ]
 
 

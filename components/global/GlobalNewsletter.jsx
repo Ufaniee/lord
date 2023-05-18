@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import newsletterIcon from '../../public/assets/Newsletter.svg'
+import newsletterIcon from '../../public/assets/newsletter.svg'
 
 const GlobalNewsletter = () => {
   return (

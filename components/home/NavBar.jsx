@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import mobileLogo from '../../public/assets/mobileLogo.svg'
-import searchIcon from '../../public/assets/Search.svg'
-import userIcon from '../../public/assets/User-2.svg'
+import searchIcon from '../../public/assets/icons/search.svg'
+import userIcon from '../../public/assets/icons/user-2.svg'
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import Image from 'next/image';
