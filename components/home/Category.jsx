@@ -1,13 +1,20 @@
 import Image from "next/image"
+import laptop from '../../public/assets/category/laptop.svg'
+import smartphone from '../../public/assets/category/smartphone.svg'
+import camera from '../../public/assets/category/camera.svg'
+import tv from '../../public/assets/category/tv-and-remote.svg'
+import conditioner from '../../public/assets/category/air-conditioner.svg'
+import speaker from '../../public/assets/category/speaker.svg'
+import gamepad from '../../public/assets/category/gamepad.svg'
 
 const category = [
-  { img: '/categoryIcons/laptop.svg', name: "Computer & Laptop" },
-  { img: '/categoryIcons/smartphone.svg', name: "Mobile & Tablet" },
-  { img: '/categoryIcons/camera.svg', name: "Camera" },
-  { img: '/categoryIcons/tv-and-remote.svg', name: "TV & Smart Box" },
-  { img: '/categoryIcons/air-conditioner.svg', name: "Home Appliances" },
-  { img: '/categoryIcons/speaker.svg', name: "Accessories" },
-  { img: '/categoryIcons/gamepad.svg', name: "Other Categories" },
+  { img: {laptop}, name: "Computer & Laptop" },
+  { img: {smartphone}, name: "Mobile & Tablet" },
+  { img: {camera}, name: "Camera" },
+  { img: {tv}, name: "TV & Smart Box" },
+  { img: {conditioner}, name: "Home Appliances" },
+  { img: {speaker}, name: "Accessories" },
+  { img: {gamepad}, name: "Other Categories" },
 ]
 
 
@@ -18,7 +25,7 @@ const Category = () => {
       <div className='flex flex-wrap lg:flex-nowrap justify-between gap-3'>
         {category.map((item, index) => (
           <div key={index} className='flex lg:flex-row flex-col w-[100px] lg:w-auto text-center lg:text-left items-center gap-1 p-2 border border-colorNormal rounded-lg cursor-pointer'>
-            <Image src={item.img} alt={item.name} width={30} height={30}/>
+            <Image src={item.img} alt="" width={30} height={30}/>
             <span className='text-[13px] text-colorBold font-[Poppins]'>{item.name}</span>
           </div>
         ))}
