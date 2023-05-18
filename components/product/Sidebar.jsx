@@ -47,6 +47,32 @@ const Sidebar = () => {
         {/* horizontal line break */}
         <hr className='border-b border-[#D0D0D2]'/>
 
+        <div>
+            <div className='flex justify-between items-center'>
+                <h3>Filter by Location</h3>
+                <FaAngleDown className='text-colorBold'/>
+            </div>
+            <form className='mt-4 text-colorNormal'>
+                <div className='flex flex-row gap-4'>
+                    <input type="checkbox" className=''/>
+                    <span>Jakarta</span> 
+                </div>
+                <div className='flex flex-row gap-4'>
+                    <input type="checkbox" className=''/>
+                    <span>Yogyakarta</span> 
+                </div>
+                <div className='flex flex-row gap-4'>
+                    <input type="checkbox" className=''/>
+                    <span>Bandung</span> 
+                </div>
+                <div className='flex flex-row gap-4'>
+                    <input type="checkbox" className=''/>
+                    <span>Surabaya</span> 
+                </div>
+            </form>
+            
+        </div>
+
     </div>
   )
 }
