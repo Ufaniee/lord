@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TimingComponent = ({value, unitOfTime, className}) => (
-    <div className={`${className && className} flex flex-col items-center py-1 px-4 rounded-xl border border-gray`}>
+    <div className={`${className && className} flex flex-col items-center py-1 px-4 rounded-xl border bg-[#fff] border-gray`}>
         <span className='text-primary'>{value}</span>
         <span>{unitOfTime}</span>
     </div>
