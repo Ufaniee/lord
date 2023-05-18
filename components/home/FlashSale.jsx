@@ -1,14 +1,14 @@
 import React from 'react'
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper";
-import Button from "../global/Button";
+// import { Autoplay, Pagination } from "swiper";
+// import Button from "../global/Button";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Timing from '../Timing';

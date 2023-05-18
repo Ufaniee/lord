@@ -2,11 +2,11 @@ import logo from '../../public/assets/siteLogo.jpg'
 import fourDots  from '../../public/assets/fourDots.svg'
 import shoppingBag  from '../../public/assets/Shopping_bag.svg'
 import emailIcon  from '../../public/assets/Email.svg'
-import Button from '../global/button'
+import Button from './button'
 import SearchInput from '../SearchInput'
 import Link from 'next/link'
 import Image from 'next/image'
-import NavBar from './NavBar'
+import NavBar from '../home/NavBar'
 
 const GlobalNav = () => {
   return (
