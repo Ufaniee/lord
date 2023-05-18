@@ -39,7 +39,7 @@ const Sidebar = () => {
                 <FaAngleDown className='text-colorBold'/>
             </div>
             <div className='flex flex-col mt-8 gap-4'>
-                <input type="range" className='text-primary'/>
+                <input type="range" className='h-[6px]'/>
                 <span className='text-colorNormal'>Price: <span className='font-bold text-colorBold'>$100 - $250</span></span>
             </div>
         </div>
