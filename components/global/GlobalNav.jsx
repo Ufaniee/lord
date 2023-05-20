@@ -6,19 +6,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import NavBar from '../home/NavBar'
 
+
 const GlobalNav = () => {
   return (
     <section className='hidden lg:flex justify-between items-center'>
         <Link href='/'>
             <Image src={logo} alt="logo" />
         </Link>
-        <NavBar/>
-
-        {/* <div className='flex gap-4'> */}
-            {/* <Image src={fourDots} alt="Four Dots icon" /> */}
-            {/* Search Input */}
-            <SearchInput/>
-        {/* </div> */}
+        <NavBar />
+        <SearchInput/>
         <div className='flex justify-between items-center gap-1'>
             <div className='flex gap-10'>
                 <div className='relative'>
@@ -29,7 +25,7 @@ const GlobalNav = () => {
             </div>
         </div>
     </section>
-  )
+      )
 }
 
 export default GlobalNav

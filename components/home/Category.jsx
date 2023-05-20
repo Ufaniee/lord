@@ -8,13 +8,13 @@ import speaker from '../../public/assets/category/speaker.svg'
 import gamepad from '../../public/assets/category/gamepad.svg'
 
 const category = [
-  { img: {laptop}, name: "Computer & Laptop" },
-  { img: {smartphone}, name: "Mobile & Tablet" },
-  { img: {camera}, name: "Camera" },
-  { img: {tv}, name: "TV & Smart Box" },
-  { img: {conditioner}, name: "Home Appliances" },
-  { img: {speaker}, name: "Accessories" },
-  { img: {gamepad}, name: "Other Categories" },
+  { img: laptop, name: "Computer & Laptop" },
+  { img: smartphone, name: "Mobile & Tablet" },
+  { img: camera, name: "Camera" },
+  { img: tv, name: "TV & Smart Box" },
+  { img: conditioner, name: "Home Appliances" },
+  { img: speaker, name: "Accessories" },
+  { img: gamepad, name: "Other Categories" },
 ]
 
 

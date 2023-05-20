@@ -10,6 +10,7 @@ import FlashSale from './FlashSale'
 import Newsletter from './Newsletter'
 import Partners from './Partners'
 import Footer from './Footer'
+import MobileNav from './MobileNav'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <div className='w-[90%] mx-auto'>
           <TopHeader/>
           <TopNav/>
+          <MobileNav/>
           <NavBar/>
           <HeroSection/>
           <Category/>
@@ -25,7 +27,7 @@ const Home = () => {
           <Collections/>
           <FlashSale/>
           <Newsletter/>
-          <Partners/>
+          <Partners className='flex-wrap justify-center gap-14 lg:gap-20'/>
       </div>
       <Footer/>
     </>
