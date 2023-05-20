@@ -8,7 +8,7 @@ const ProgressBar = (props) => {
     }
   
     return (
-      <div className={`h-4 w-full bg-[#D0D0D2] rounded-lg`}>
+      <div className={`h-2 w-full bg-[#D0D0D2] rounded-lg`}>
         <div style={fillerStyles} className='h-full'>
         </div>
       </div>

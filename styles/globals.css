@@ -10,6 +10,67 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Your custom styles */
+/* Add the following CSS to style the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #D0D0D2;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FCC313;
+  border-radius: 4px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: #FCC313;
+} */
+
+input[type='range'] {
+  /* background: linear-gradient(to right, #FCC313 0%, #FCC313 50%, #fff 50%, #fff 100%); */
+  border: solid 1px #D0D0D2;
+  border-radius: 8px;
+  height: 7px;
+  /* width: 356px; */
+  /* outline: none; */
+  background-color: #D0D0D2;
+  /* transition: all 450ms ease-in; */
+  /* -webkit-appearance: none; */
+}
+
+input[type='range']::-webkit-slider-thumb {
+  background-color: #FCC313;
+}
+
+/*Chrome*/
+/* @media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: #D0D0D2;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #FCC313;
+    margin-top: -1px;
+    color: #FCC313;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 20px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #fff;
+    box-shadow: -80px 0 0 80px #FCC313;
+    border-radius: 50%;
+  }
+
+} */
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -25,12 +86,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .swiper-pagination-bullet-active {
   background-color: #FCC313 !important;
 }
+
+.my-custom-pagination-div {
+  /* background-color: #FCC313 !important; */
+  /* color: #FCC313 !important; */
+
+}
+
+.my-custom-pagination-div-active {
+  /* background-color: #FCC313 !important; */
+  color: #FCC313 !important;
+
+}
+
+.flash-sales .swiper-pagination-bullet {
+  background: #23262f;
+}
+
+.flash-sales .swiper-button-prev,
+.flash-sales .swiper-button-next {
+  background: #FCC313;
+  /* box-shadow: 0px 4px 10px rgba(15, 27, 51, 0.1); */
+  top: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+/* .feature-section {
+  position: relative;
+  background-color: green;
+}
+
+.feature-section .swiper-pagination-bullet {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: black;
+} */
 
 /* .flash-sales .swiper-pagination {
 	position: absolute;

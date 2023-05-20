@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper";
-import Button from "../global/Button";
+// import Button from "../global/Button";
 import Timing from "../Timing";
 
 
@@ -17,17 +17,26 @@ const FeaturedSlider = ({ featuredProducts }) => {
 
 
 	return (
-        <Swiper className="lg:!hidden"
+		<Swiper className="lg:!hidden"
 			slidesPerView={1}
 			centeredSlides={true}
 			spaceBetween={20}
 			grabCursor={true}
-			// autoplay={{
-			// 	delay: 2500,
-			// 	disableOnInteraction: false,
-			//   }}
+			autoplay={{
+				delay: 2500,
+				disableOnInteraction: false,
+			  }}
 			pagination={{
 				clickable: true,
+				// paginationClickable: true,
+				// el: `.my-custom-pagination-div`,
+				// type: 'bullets',
+				// currentClass: '.my-custom-pagination-div-active',
+				// renderBullet: (index, className) => { 
+				// 	return '<span className="' + className + '">' + index + 1 + "</span>";
+				// }
+
+
 			}}
 			modules={[Pagination, Autoplay]}
 		>
@@ -45,7 +54,7 @@ const FeaturedSlider = ({ featuredProducts }) => {
                 </SwiperSlide>
 				 
             ))}
-      </Swiper>
+      </Swiper>        
 	);
 }
 

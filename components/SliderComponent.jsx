@@ -12,8 +12,8 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 // import Button from "../global/Button";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import { HiArrowLongRight } from "react-icons/hi2";
-import Timing from '../Timing';
-import ProgressBar from '../ProgressBar';
+import Timing from './Timing';
+import ProgressBar from './ProgressBar';
 
 
 const flashSaleProducts = [
@@ -22,7 +22,7 @@ const flashSaleProducts = [
     { name: 'Bluetooth Printer', price: 29.99, promoPrice: 19.99, available: 5, sold: 2 },
 ]
 
-const FlashSale = () => {
+const SliderComponent = () => {
   return (
     <div className='my-20 relative'>
         <div className='flex justify-between my-5'>
@@ -35,14 +35,13 @@ const FlashSale = () => {
                 <div className="flex">
                     {Array.from({ length: flashSaleProducts.length }).map((item, index) => (
                         <div key={index} className={`h-2 mx-1 w-2 rounded-full bg-gray`}/>
-                        // <div key={index} onClick={() => moveDot(index + 1)} className={`h-2 mx-1 ${slideIndex === index + 1 ? 'w-5 rounded-lg bg-primary' : 'w-2 rounded-full bg-[#FAFAFA]'}`}/>
                         ))}
 			    </div>
                 <HiArrowLongRight/>
             </div>
         </div>
 
-        <div className='flex flex-col lg:flex-row justify-between w-full gap-5 lg:gap-5'>
+        <div className='flex flex-col lg:flex-row justify-between w-full gap-5 lg:gap-5 flash-sales'>
                 <div className='w-[100%] lg:w-[20%] flex flex-col items-center gap-2 border border-gray rounded-2xl px-5 pt-5 bg-primary font-bold'>
                     <h3>Up to 30% Off!</h3>
                     <div className='flex flex-col items-center justify-center mt-20'>
@@ -51,14 +50,14 @@ const FlashSale = () => {
                     </div>  
                 </div >
                 <div className="flex flex-col lg:flex-row justify-between gap-4 lg:w-[75%] w-[100%]">
-                    <Swiper className='flash-sales'
+                    <Swiper className=''
                         centeredSlides={true}
                         spaceBetween={10}
                         grabCursor={true}
-                        autoplay={{
-                        	delay: 2500,
-                        	disableOnInteraction: false,
-                          }}
+                        // autoplay={{
+                        // 	delay: 2500,
+                        // 	disableOnInteraction: false,
+                        //   }}
                         pagination={{
                             clickable: true,
                         }}
@@ -104,4 +103,4 @@ const FlashSale = () => {
   )
 }
 
-export default FlashSale
+export default SliderComponent

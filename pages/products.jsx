@@ -1,12 +1,11 @@
-import Layout from '@/components/global/Layout'
+import Layout from '../components/global/Layout'
+import ProductPage from '../components/product/ProductPage'
 import React from 'react'
 
 const products = () => {
   return (
     <Layout>
-        <div className='text-center'>
-            Product Page
-        </div>
+        <ProductPage/>
     </Layout>
   )
 }

@@ -1,12 +1,11 @@
 import logo from '../../public/assets/siteLogo.jpg'
-import fourDots  from '../../public/assets/fourDots.svg'
-import shoppingBag  from '../../public/assets/Shopping_bag.svg'
-import emailIcon  from '../../public/assets/Email.svg'
-import Button from './button'
+import shoppingBag  from '../../public/assets/icons/shopping_bag.svg'
+import emailIcon  from '../../public/assets/icons/email.svg'
 import SearchInput from '../SearchInput'
 import Link from 'next/link'
 import Image from 'next/image'
 import NavBar from '../home/NavBar'
+
 
 const GlobalNav = () => {
   return (
@@ -14,13 +13,8 @@ const GlobalNav = () => {
         <Link href='/'>
             <Image src={logo} alt="logo" />
         </Link>
-        <NavBar/>
-
-        {/* <div className='flex gap-4'> */}
-            {/* <Image src={fourDots} alt="Four Dots icon" /> */}
-            {/* Search Input */}
-            <SearchInput/>
-        {/* </div> */}
+        <NavBar />
+        <SearchInput/>
         <div className='flex justify-between items-center gap-1'>
             <div className='flex gap-10'>
                 <div className='relative'>
@@ -31,7 +25,7 @@ const GlobalNav = () => {
             </div>
         </div>
     </section>
-  )
+      )
 }
 
 export default GlobalNav

@@ -10,9 +10,9 @@ const partners = [
     {name: 'Cocoon', link: '/', fontFamily: 'Inter'}
 ]
 
-const Partners = () => {
+const Partners = ({className}) => {
   return (
-    <div className="flex flex-wrap justify-center my-10 gap-14 lg:gap-20">
+    <div className={`flex text-colorBold my-10 ${className && className}`}>
         <Link href='/' className="text-3xl text-colorBold font-['Playfair_Display']">SimSong</Link>
         <Link href='/' className="text-3xl text-colorBold font-['Poppins']">Harps</Link>
         <Link href='/' className="text-3xl text-colorBold font-['Vidaloka']">DiskVan</Link>

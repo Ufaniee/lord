@@ -1,9 +1,9 @@
 import instagramIcon from '../../public/assets/instagram.svg'
 import facebookIcon from '../../public/assets/facebook.svg'
-import twitterIcon from '../../public/assets/Twitter.svg'
+import twitterIcon from '../../public/assets/twitter.svg'
 import linkedinIcon from '../../public/assets/Linkedin.svg'
-import callIcon from '../../public/assets/Call.svg'
-import emailIcon from '../../public/assets/Email-1.svg'
+import callIcon from '../../public/assets/icons/call.svg'
+import emailIcon from '../../public/assets/icons/email-1.svg'
 import Image from 'next/image'
 
 const TopHeader = () => {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ButtonSlider from './ButtonSlider';
 import { dataSlider } from '../../constants';
-import Button from '../global/button';
+import Button from '../global/Button';
 
 const HeroSlider = () => {
 	const [ slideIndex, setSlideIndex ] = useState(1);

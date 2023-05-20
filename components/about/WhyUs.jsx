@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import brand from '../../public/assets/about/brand.svg'
-import fastDelivery from '../../public/assets/about/Fast Delivery.svg'
-import cashOnDelivery from '../../public/assets/about/Cash_On_Delivery.svg'
-import quality from '../../public/assets/about/Quality.svg'
+import brand from '../../public/assets/aboutus/brand.svg'
+import fastDelivery from '../../public/assets/aboutus/fast_delivery.svg'
+import cashOnDelivery from '../../public/assets/aboutus/cash_on_delivery.svg'
+import quality from '../../public/assets/aboutus/quality.svg'
 
 const whyUs = [
     {title:'54 Brands', subTitle: 'Over 200k listings, Stay shopping', img: brand },

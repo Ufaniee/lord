@@ -5,8 +5,8 @@ import paypal from '../../public/assets/icons/paypal.svg'
 import instagram from '../../public/assets/icons/instagram-footer.svg'
 import twitter from '../../public/assets/icons/twitter-footer.svg'
 import facebook from '../../public/assets/icons/facebook-footer.svg'
-import callIcon from '../../public/assets/Call.svg'
-import emailIcon from '../../public/assets/Email-1.svg'
+import callIcon from '../../public/assets/icons/call.svg'
+import emailIcon from '../../public/assets/icons/email-1.svg'
 import Link from 'next/link'
 
 const conpanyNavList = [
