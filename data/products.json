@@ -1,0 +1,76 @@
+[
+    {
+      "id":"1",
+      "name": "Smartphone Camera",
+      "price": 1000.00,
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "flashsale":true,
+      "category":"camera",
+      "img":"",
+      "star": 5.0, 
+      "sold": 99
+      
+    },
+     {
+      "id":"2",
+      "name": "USB Speaker",
+      "price": 100.00,
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "limitedOffer":true,
+      "category":"computer & laptop",
+      "img":"",
+      "star": 5.0, 
+      "sold": 99
+  
+    },
+    {
+      "id":"5",
+      "name": "Smart TV",
+      "price": 48.00,
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "limitedOffer":true,
+      "category":"computer & laptop",
+      "img":"",
+      "star": 5.0, 
+      "sold": 99
+    },
+    {
+       "id":"3",
+      "name": "Smartphone 5G",
+      "price": 400.00,
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "limitedOffer":true,
+      "category":"mobile & tablet",
+      "img":"",
+      "star": 5.0, 
+      "sold": 99
+  
+    },
+      {
+       "id":"6",
+      "name": "Camera HD + Lens",
+      "price": 29.00,
+      "flashsale":true,
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "category":"accessories",
+        "img":"",
+        "star": 5.0, 
+      "sold": 99
+  
+    }
+    ,
+      {
+       "id":"7",
+      "name": "wireless Microphone",
+      "price": 75.00,
+      "flashsale":true,
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "category":"accessories",
+      "img":"",
+      "star": 5.0, 
+      "sold": 99
+  
+    }
+    
+  ]
+  
