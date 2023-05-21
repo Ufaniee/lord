@@ -30,25 +30,25 @@ const ProductInfo = ({id}) => {
 
         {/* Product Detail information */}
         <div className='w-full lg:w-1/2 text-colorBold text-center lg:text-left'>
-            <span className='hidden lg:block'>Product &nbsp; &gt; &nbsp; <span className='text-primary'> {data.name}</span></span>
+            <span className='hidden lg:block'>Product &nbsp; &gt; &nbsp; <span className='text-primary'> {data?.name}</span></span>
             <div className='mt-3 flex flex-col lg:flex-row justify-between items-center text-sm'>
                 <div className='flex items-center gap-2'>
-                    <span className='font-bold'>{data.star}.0</span>
+                    <span className='font-bold'>{data?.star}.0</span>
                     <span className='flex gap-1'>
-                        {Array.from({length: data.star}).map((star, index) => (
+                        {Array.from({length: data?.star}).map((star, index) => (
                             <MdStarRate key={index} className='text-primary'/>
                         ))}
                     </span>
-                    <span>Review (12) &nbsp; | &nbsp; Sold {data.sold}</span>
+                    <span>Review (12) &nbsp; | &nbsp; Sold {data?.sold}</span>
                 </div>
                 <div>
                     <Button className='flex items-center gap-2 font-semibold'><FaHeart className='text-primary'/>Add to Wishlist</Button>
                 </div>
             </div>
             <div className='flex flex-col gap-5 border-b border-colorNormal pb-6'>
-                <h1 className='text-3xl'>{data.name}</h1>
+                <h1 className='text-3xl'>{data?.name}</h1>
                 <div className='flex justify-center lg:justify-start items-center gap-2'>
-                    <span className='text-4xl font-bold'>${data.price}.00</span>
+                    <span className='text-4xl font-bold'>${data?.price}.00</span>
                     <span className='line-through text-colorNormal'>$99.00</span>
                     <Button buttonText='Save 50%' className='px-1 py-[4px] border border-primary text-sm font-semibold'/>
                 </div>
