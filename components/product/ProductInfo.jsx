@@ -67,7 +67,7 @@ const ProductInfo = ({id}) => {
                 <div className='flex items-center gap-4'>
                     <span>Quantity</span>
                     <Button type='button' buttonText='-' className='bg-gray font-bold'/>
-                    <span className='text-primary'>|</span>
+                    <span className='text-primary'>1</span>
                     <Button type='button' buttonText='+' className='bg-primary font-bold'/>
                 </div>
                 <div className='flex items-center gap-4'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const GiftCards = () => {
   return (
-    <div>GiftCards</div>
+    <div>Gift Cards Here</div>
   )
 }
 
