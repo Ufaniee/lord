@@ -12,11 +12,12 @@ const ProductInfo = ({id}) => {
 
     //  Find the product by id  
     const data = products.find(product => product.id === id);
+    console.log(data);
 
     
   return (
     <section className='flex flex-col lg:items-center lg:flex-row gap-20 mt-16 mb-5 font-[Poppins]'>
-        <span className='block lg:hidden'>Product &nbsp; &gt; &nbsp; <span className='text-primary'> {data.name}</span></span>
+        <span className='block lg:hidden'>Product &nbsp; &gt; &nbsp; <span className='text-primary'> {data?.name}</span></span>
 
         {/* Product Pictures */}
         <div className='flex flex-col w-full mx-auto lg:w-1/2 gap-4'>
