@@ -124,7 +124,7 @@ const Sidebar = () => {
         </div>
 
         <Button type='button' buttonText='Filter' className='bg-primary w-[170px] mx-auto' />
-        <Button type='button' buttonText='Reset Filter' className='bg-[#fff] text-primary w-[170px] mx-auto' />
+        <Button type='reset' buttonText='Reset Filter' className='bg-[#fff] text-primary w-[170px] mx-auto' />
         
     </div>
   )
