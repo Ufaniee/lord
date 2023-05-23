@@ -1,13 +1,13 @@
-import Contact from '@/components/contact/Contact'
+import Cart from '@/components/cart/Cart'
 import Layout from '../components/global/Layout'
 import React from 'react'
 
-const contact = () => {
+const cart = () => {
   return (
     <Layout>
-        <Contact/>
+        <Cart/>
     </Layout>
   )
 }
 
-export default contact
+export default cart

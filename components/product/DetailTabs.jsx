@@ -3,6 +3,7 @@ import ProductReview from './ProductReview';
 import ProductDescription from './ProductDescription';
 import ProductDiscussion from './ProductDiscussion';
 import GiftCards from './GiftCards';
+import AddReview from './AddReview';
 
 const tabs = [`Reviews (${200})`,"Description","Discussion","Gift Cards"]
 
@@ -35,11 +36,11 @@ const DetailTabs = () => {
                 <li key={index} className={` ${tab === (index + 1) && 'text-primary border-b-2'} border-primary pb-2 cursor-pointer`} onClick={() => setTab((index + 1))}>{tabName}</li>
             ))}
         </ul>
-        <div>
-            <div className='w-1/2 border-r border-gray'>
+        <div className='flex flex-col lg:flex-row my-10'>
+            <div className='w-full lg:w-1/2 border-r border-gray'>
                 {displayTabs(tab)}
             </div>
-            <div></div>
+            <AddReview/>
         </div>
     </>
   )

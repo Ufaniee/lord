@@ -1,13 +1,13 @@
-import Contact from '@/components/contact/Contact'
 import Layout from '../components/global/Layout'
 import React from 'react'
+import Discount from '@/components/cart/Discount'
 
-const contact = () => {
+const discount = () => {
   return (
     <Layout>
-        <Contact/>
+        <Discount/>
     </Layout>
   )
 }
 
-export default contact
+export default discount

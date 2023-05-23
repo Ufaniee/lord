@@ -17,10 +17,10 @@ const GlobalNav = () => {
         <SearchInput/>
         <div className='flex justify-between items-center gap-1'>
             <div className='flex gap-10'>
-                <div className='relative'>
+                <Link href='/cart' className='relative'>
                     <Image src={shoppingBag} alt="Shopping back" />
                     <span className='absolute bg-primary text-xs rounded-full p-1 -top-4 left-5'>99</span>
-                </div>
+                </Link>
                 <Image src={emailIcon} alt="Email Icon" />
             </div>
         </div>
