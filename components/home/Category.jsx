@@ -1,20 +1,23 @@
 import Image from "next/image"
-import laptop from '../../public/assets/category/laptop.svg'
-import smartphone from '../../public/assets/category/smartphone.svg'
-import camera from '../../public/assets/category/camera.svg'
-import tv from '../../public/assets/category/tv-and-remote.svg'
-import conditioner from '../../public/assets/category/air-conditioner.svg'
-import speaker from '../../public/assets/category/speaker.svg'
-import gamepad from '../../public/assets/category/gamepad.svg'
+import groceries from '../../public/assets/category/groceries.svg'
+import clothing from '../../public/assets/category/clothing.svg'
+import health from '../../public/assets/category/health.svg'
+import beauty from '../../public/assets/category/beauty.svg'
+import devices from '../../public/assets/category/devices.svg'
+import sports from '../../public/assets/category/sports.svg'
+import fastfood from '../../public/assets/category/fastfood.svg'
 
 const category = [
-  { img: laptop, name: "Computer & Laptop" },
-  { img: smartphone, name: "Mobile & Tablet" },
-  { img: camera, name: "Camera" },
-  { img: tv, name: "TV & Smart Box" },
-  { img: conditioner, name: "Home Appliances" },
-  { img: speaker, name: "Accessories" },
-  { img: gamepad, name: "Other Categories" },
+  { img: fastfood, name: "Food" },
+  { img: groceries, name: "Groceries" },
+  { img: clothing, name: "Fashion & Clothing" },
+  { img: health, name: "Health Products" },
+  { img: beauty, name: "Beauty Products" },
+  { img: devices, name: "Electronics & Devices" },
+  { img: sports, name: "Sporting Products" },
+  
+
+
 ]
 
 

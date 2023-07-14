@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import ButtonSlider from './ButtonSlider';
-import { dataSlider } from '../../constants';
-import Button from '../global/Button';
+/** @format */
+
+import React, { useEffect, useState } from "react";
+import ButtonSlider from "./ButtonSlider";
+import { dataSlider } from "../../constants";
+import Button from "../global/Button";
 
 const HeroSlider = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -37,7 +39,7 @@ const HeroSlider = () => {
       } else if (slideIndex === dataSlider.length) {
         setSlideIndex(1);
       }
-    }, 3000);
+    }, 10000);
     return () => {
       resetTimeout();
     };
@@ -48,33 +50,57 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className='h-[400px] mx-auto my-0 relative overflow-hidden rounded-[32px]' style={{ boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)' }}>
+    <div
+      className="h-[400px] mx-auto my-0 relative overflow-hidden rounded-[32px]"
+      style={{ boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)" }}
+    >
       {dataSlider.map((obj, index) => {
         return (
           <div
             key={obj.id}
-            className={`w-full h-full absolute opacity-0 transition-all ease-in-out ${slideIndex === index + 1 ? 'opacity-100' : 'opacity-0'}`}
-            // style={{ backgroundImage: `url(${obj.backgroundImage})` }}
+            className={`w-full h-full absolute opacity-0 transition-all ease-in-out ${
+              slideIndex === index + 1 ? "opacity-100" : "opacity-0"
+            }`}
+            style={{
+              backgroundImage: `url(${obj.backgroundImage})`,
+              backgroundColor: obj.color,
+            }}
           >
             <div className="absolute text-center lg:text-left top-12 left-6 lg:left-28 w-[266px] lg:w-[500px] flex flex-col gap-4">
-              <h1 className='text-[36px] lg:text-[56px] font-semibold text-colorBold'>{obj.title}</h1>
-              <p className='text-[15px] lg:text-2xl text-colorNormal'>{obj.subTitle}</p>
-              <Button type='button' buttonText='Shop Now' className='bg-primary w-[170px] mx-auto lg:mx-0' />
+              <h1 className="text-[36px] lg:text-[56px] font-semibold text-colorBold" style={{ color: obj.color1 }}>
+                {obj.title}
+              </h1>
+              <p className="text-[15px] lg:text-2xl text-colorNormal" style={{ color: obj.color2 }}>
+                {obj.subTitle}
+              </p>
+              <button
+                type="button"
+                className="px-6 py-3 rounded-lg text-lg w-[170px] mx-auto lg:mx-0"
+                style={{ backgroundColor: obj.buttonColor }}
+              >Shop Now</button>
             </div>
           </div>
         );
       })}
 
-      <ButtonSlider moveSlide={prevSlide} direction={'prev'} />
-      <ButtonSlider moveSlide={nextSlide} direction={'next'} />
+      <ButtonSlider moveSlide={prevSlide} direction={"prev"} />
+      <ButtonSlider moveSlide={nextSlide} direction={"next"} />
 
       <div className="absolute bottom-2 left-[40%] lg:left-[45%] flex">
         {Array.from({ length: dataSlider.length }).map((item, index) => (
-          <div key={index} onClick={() => moveDot(index + 1)} className={`h-2 mx-1 ${slideIndex === index + 1 ? 'w-5 rounded-lg bg-primary' : 'w-2 rounded-full bg-[#FAFAFA]'}`} />
+          <div
+            key={index}
+            onClick={() => moveDot(index + 1)}
+            className={`h-2 mx-1 ${
+              slideIndex === index + 1
+                ? "w-5 rounded-lg bg-primary"
+                : "w-2 rounded-full bg-[#FAFAFA]"
+            }`}
+          />
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default HeroSlider;
