@@ -6,17 +6,17 @@ import Button from '../global/Button';
 
 
 const categories = [
-    {name: 'Computer & Laptop', available: 25},
-    {name: 'Mobile & Tablet', available: 125},
-    {name: 'Camera', available: 150},
-    {name: 'TV & Smart Box', available: 75},
-    {name: 'Home Appliance', available: 75},
-    {name: 'Smart Watch', available: 45},
-    {name: 'Microphone & Audio', available: 55},
-    {name: 'Gaming', available: 40},
-    {name: 'Printer', available: 14},
-    {name: 'Accessories', available: 32},
-    {name: 'More Categories', available: 10},
+    {name: 'Food', available: 25},
+    {name: 'Groceries', available: 125},
+    {name: 'Fashion & Clothing', available: 150},
+    {name: 'Health Products', available: 75},
+    {name: 'Beauty Products', available: 75},
+    {name: 'Electronics & Devices', available: 45},
+    {name: 'Baby Products', available: 55},
+    {name: 'Sporting Goods', available: 40},
+    {name: 'Flawers', available: 14},
+    {name: 'Cakes', available: 32},
+    {name: 'Customisable Products', available: 10},
 ]
 
 
@@ -49,7 +49,7 @@ const Sidebar = () => {
         </div>
         
         {/* Filter by Location */}
-        <div className='border-b border-[#D0D0D2] pb-4'>
+        {/* <div className='border-b border-[#D0D0D2] pb-4'>
             <div className='flex justify-between items-center'>
                 <h3>Filter by Location</h3>
                 <FaAngleDown className='text-colorBold'/>
@@ -72,8 +72,8 @@ const Sidebar = () => {
                     <span>Surabaya</span> 
                 </div>
             </form>
-            
-        </div>
+            z
+        </div> */}
 
         {/* Filter by Rating */}
         <div className='border-b border-[#D0D0D2] pb-4'>

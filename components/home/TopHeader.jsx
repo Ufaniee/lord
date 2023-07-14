@@ -18,11 +18,11 @@ const TopHeader = () => {
       <div className='flex gap-8'>
         <div className='flex gap-4'>
           <Image src={callIcon} alt="call icon" />
-          <span>+12 345 6789 0</span>
+          <span>+234-814 0563-810 </span>
         </div>
         <div className='flex gap-4'>
           <Image src={emailIcon} alt="email icon" />
-          <span>support@tronix.com</span>
+          <span>contact@beeldrop.com</span>
         </div>
       </div>
     </header>
