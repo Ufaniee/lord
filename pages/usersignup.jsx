@@ -238,10 +238,10 @@ const UserSignUp = () => {
             >
               <Link href="/userlogin">
                 <p>
-                  Don't have an account?{" "}
+                  Already have an account?{" "}
                   <span style={{ fontWeight: "bold", color: "#FCC313" }}>
                     Login
-                  </span>{" "}
+                  </span>
                 </p>
               </Link>
             </div>

@@ -203,10 +203,10 @@ const UserLogin = () => {
             >
               <Link href="/usersignup">
                 <p>
-                  Don't have an account?{" "}
+                  Do not have an account?
                   <span style={{ fontWeight: "bold", color: "#FCC313" }}>
-                    Create an Account
-                  </span>{" "}
+                    Create Account
+                  </span>
                 </p>
               </Link>
             </div>
