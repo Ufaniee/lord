@@ -105,13 +105,13 @@ const VendorIntro = () => {
           <p>
             Join BeelyDrop today and unlock the potential to grow your business,
             reach new customers, and elevate your brand to new heights.
-            Together, let's create a thriving online marketplace that celebrates
+            Together, let us create a thriving online marketplace that celebrates
             creativity, quality, and personalized shopping experiences.
           </p>
           <button className={buttonStyle}>Sign Up as a Vendor</button>
         </center>
         <p className="pt-8 pb-4">
-          <h1 className="font-bold">Here's how it works:</h1>
+          <h1 className="font-bold">Here is how it works:</h1>
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className={stepStyle}>
@@ -134,7 +134,7 @@ const VendorIntro = () => {
               </h1>
             </div>
             <p className="p-4">
-              Once your profile is set up, it's time to add your products to our
+              Once your profile is set up, it is time to add your products to our
               extensive catalog. Upload captivating images, write compelling
               descriptions, and set competitive prices. With our user-friendly
               interface, you can easily customize your products and provide
@@ -177,7 +177,7 @@ const VendorIntro = () => {
             </div>
             <p className="p-4">
               At BeelyDrop, we prioritize your financial security. Our platform
-              offers secure transactions, protecting you and your customers'
+              offers secure transactions, protecting you and your customers
               sensitive information. We also provide timely payouts, ensuring
               you receive your earnings promptly and hassle-free.
             </p>
