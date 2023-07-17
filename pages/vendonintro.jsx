@@ -3,13 +3,13 @@
 import Layout from "../components/global/Layout";
 import React, { useState } from "react";
 
-const VendorSignUp = () => {
+const VendorIntro = () => {
   
   return (
     <Layout>
-      {/* VendorSignUp page */}
+      {/* VendorIntro page */}
     </Layout>
   );
 };
 
-export default VendorSignUp;
+export default VendorIntro;

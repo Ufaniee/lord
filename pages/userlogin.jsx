@@ -160,7 +160,7 @@ const UserLogin = () => {
               <label htmlFor="rememberMe">Remember me</label>
             </div>
 
-            <Link href="/" style={{ fontSize: 11, color: "#FCC313" }}>
+            <Link href="/userforgotpassword" style={{ fontSize: 11, color: "#FCC313" }}>
               Forgot password
             </Link>
           </div>
