@@ -7,7 +7,7 @@ import UserIcon from "../public/assets/User1.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-const UserFotgotPassword = () => {
+const VendorLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
@@ -58,9 +58,8 @@ const UserFotgotPassword = () => {
               marginBottom: "1rem",
             }}
           >
-            Forgot Password
+            Login
           </h2>
-          <p style={{paddingBottom: "20px", color: "gray" }}>We are going to send you a password reset link to your email</p>
           <div
             style={{
               display: "flex",
@@ -98,7 +97,73 @@ const UserFotgotPassword = () => {
               />
             </div>
           </div>
-          
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginBottom: "1rem",
+            }}
+          >
+            <label htmlFor="password">Password</label>
+            <div
+              style={{
+                display: "flex",
+                border: "1px solid gray",
+                borderRadius: "8px",
+                alignItems: "center",
+                padding: "0.5rem",
+              }}
+            >
+              <Image
+                src={LockIcon}
+                alt="Lock Icon"
+                style={{ width: "24px", height: "24px", marginRight: "8px" }}
+              />
+              <input
+                required
+                type="password"
+                id="password"
+                style={{
+                  border: "none",
+                  outline: "none",
+                  flex: "1",
+                }}
+                placeholder="Password"
+                value={password}
+                onChange={handlePasswordChange}
+              />
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginBottom: "1rem",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                paddingRight: "80px",
+                fontSize: 11,
+              }}
+            >
+              <input
+                type="checkbox"
+                id="rememberMe"
+                className="mr-2"
+                checked={rememberMe}
+                onChange={handleRememberMeChange}
+              />
+              <label htmlFor="rememberMe">Remember me</label>
+            </div>
+
+            <Link href="/userforgotpassword" style={{ fontSize: 11, color: "#FCC313" }}>
+              Forgot password
+            </Link>
+          </div>
           <button
             type="submit"
             style={{
@@ -110,9 +175,23 @@ const UserFotgotPassword = () => {
               width: "100%",
             }}
           >
-            Send Email
+            Login
           </button>
-          
+          <div style={{ marginTop: "1rem" }}>
+            <button
+              style={{
+                background: "red",
+                color: "white",
+                fontWeight: "bold",
+                padding: "0.75rem 1rem",
+                borderRadius: "8px",
+                width: "100%",
+              }}
+            >
+              Login with Google
+            </button>
+          </div>
+
           <center>
             <div
               style={{
@@ -122,7 +201,7 @@ const UserFotgotPassword = () => {
                 paddingBottom: "40px",
               }}
             >
-              <Link href="/usersignup">
+              <Link href="/vendorsignup">
                 <p>
                   Do not have an account?
                   <span style={{ fontWeight: "bold", color: "#FCC313" }}>
@@ -138,4 +217,4 @@ const UserFotgotPassword = () => {
   );
 };
 
-export default UserFotgotPassword;
+export default VendorLogin;

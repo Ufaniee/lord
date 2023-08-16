@@ -7,21 +7,30 @@ import UserIcon from "../public/assets/User1.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-const UserSignUp = () => {
+const VendorSignUp = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
 
+  // Event handler for first name input change
+  const handleFirstNameChange = (e) => {
+    setFirstName(e.target.value);
+  };
+
+  // Event handler for last name input change
+  const handleLastNameChange = (e) => {
+    setLastName(e.target.value);
+  };
+
+  // Event handler for email input change
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
-  };
-
-  const handleRememberMeChange = (e) => {
-    setRememberMe(e.target.checked);
   };
 
   const handleSubmit = (e) => {
@@ -58,8 +67,146 @@ const UserSignUp = () => {
               marginBottom: "1rem",
             }}
           >
-            Create Your Shopping Account
+            Create Your Selling Account
           </h2>
+          {/* First Name */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginBottom: "1rem",
+            }}
+          >
+            <label htmlFor="firstName">First Name</label>
+            <div
+              style={{
+                display: "flex",
+                border: "1px solid gray",
+                borderRadius: "8px",
+                alignItems: "center",
+                padding: "0.5rem",
+              }}
+            >
+              <input
+                required
+                type="text"
+                id="firstName"
+                style={{
+                  border: "none",
+                  outline: "none",
+                  flex: "1",
+                }}
+                placeholder="First Name"
+                value={firstName}
+                onChange={handleFirstNameChange}
+              />
+            </div>
+          </div>
+
+          {/* last name */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginBottom: "1rem",
+            }}
+          >
+            <label htmlFor="lastName">Last Name</label>
+            <div
+              style={{
+                display: "flex",
+                border: "1px solid gray",
+                borderRadius: "8px",
+                alignItems: "center",
+                padding: "0.5rem",
+              }}
+            >
+              <input
+                required
+                type="text"
+                id="lastName"
+                style={{
+                  border: "none",
+                  outline: "none",
+                  flex: "1",
+                }}
+                placeholder="Last Name"
+                value={lastName}
+                onChange={handleLastNameChange}
+              />
+            </div>
+          </div>
+
+          
+          {/* Business name */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginBottom: "1rem",
+            }}
+          >
+            <label htmlFor="lastName">Business Name</label>
+            <div
+              style={{
+                display: "flex",
+                border: "1px solid gray",
+                borderRadius: "8px",
+                alignItems: "center",
+                padding: "0.5rem",
+              }}
+            >
+              <input
+                required
+                type="text"
+                id="businessname"
+                style={{
+                  border: "none",
+                  outline: "none",
+                  flex: "1",
+                }}
+                placeholder="Business Name"
+                value={lastName}
+                onChange={handleLastNameChange}
+              />
+            </div>
+          </div>
+
+          {/* Business Address */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginBottom: "1rem",
+            }}
+          >
+            <label htmlFor="lastName">Business Address</label>
+            <div
+              style={{
+                display: "flex",
+                border: "1px solid gray",
+                borderRadius: "8px",
+                alignItems: "center",
+                padding: "0.5rem",
+              }}
+            >
+              <input
+                required
+                type="text"
+                id="businessaddress"
+                style={{
+                  border: "none",
+                  outline: "none",
+                  flex: "1",
+                }}
+                placeholder="Business Address"
+                value={lastName}
+                onChange={handleLastNameChange}
+              />
+            </div>
+          </div>
+
+          {/* Business email */}
           <div
             style={{
               display: "flex",
@@ -97,6 +244,8 @@ const UserSignUp = () => {
               />
             </div>
           </div>
+
+          {/* Create Password */}
           <div
             style={{
               display: "flex",
@@ -134,6 +283,8 @@ const UserSignUp = () => {
               />
             </div>
           </div>
+
+          {/* Confirm Password */}
           <div
             style={{
               display: "flex",
@@ -171,35 +322,7 @@ const UserSignUp = () => {
               />
             </div>
           </div>
-          {/* <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginBottom: "1rem",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                paddingRight: "80px",
-                fontSize: 11,
-              }}
-            >
-              <input
-                
-                type="checkbox"
-                id="rememberMe"
-                className="mr-2"
-                checked={rememberMe}
-                onChange={handleRememberMeChange}
-              />
-              <label htmlFor="rememberMe">Remember me</label>
-            </div>
 
-           
-          </div> */}
           <button
             type="submit"
             style={{
@@ -213,20 +336,7 @@ const UserSignUp = () => {
           >
             Register
           </button>
-          <div style={{ marginTop: "1rem" }}>
-            <button
-              style={{
-                background: "red",
-                color: "white",
-                fontWeight: "bold",
-                padding: "0.75rem 1rem",
-                borderRadius: "8px",
-                width: "100%",
-              }}
-            >
-              Sign Up with Google
-            </button>
-          </div>
+
           <center>
             <div
               style={{
@@ -236,7 +346,7 @@ const UserSignUp = () => {
                 paddingBottom: "40px",
               }}
             >
-              <Link href="/userlogin">
+              <Link href="/vendorlogin">
                 <p>
                   Already have an account?{" "}
                   <span style={{ fontWeight: "bold", color: "#FCC313" }}>
@@ -252,4 +362,4 @@ const UserSignUp = () => {
   );
 };
 
-export default UserSignUp;
+export default VendorSignUp;

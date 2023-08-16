@@ -1,13 +1,13 @@
 /** @format */
 
-import Layout from "../components/global/Layout";
+import Layout from "../../components/global/Layout";
 import React, { useState } from "react";
-import LockIcon from "../public/assets/Lock.svg";
-import UserIcon from "../public/assets/User1.svg";
+import LockIcon from "../../public/assets/Lock.svg";
+import UserIcon from "../../public/assets/User1.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-const UserLogin = () => {
+const UserFotgotPassword = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
@@ -58,8 +58,9 @@ const UserLogin = () => {
               marginBottom: "1rem",
             }}
           >
-            Login
+            Forgot Password
           </h2>
+          <p style={{paddingBottom: "20px", color: "gray" }}>We are going to send you a password reset link to your email</p>
           <div
             style={{
               display: "flex",
@@ -97,73 +98,7 @@ const UserLogin = () => {
               />
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              marginBottom: "1rem",
-            }}
-          >
-            <label htmlFor="password">Password</label>
-            <div
-              style={{
-                display: "flex",
-                border: "1px solid gray",
-                borderRadius: "8px",
-                alignItems: "center",
-                padding: "0.5rem",
-              }}
-            >
-              <Image
-                src={LockIcon}
-                alt="Lock Icon"
-                style={{ width: "24px", height: "24px", marginRight: "8px" }}
-              />
-              <input
-                required
-                type="password"
-                id="password"
-                style={{
-                  border: "none",
-                  outline: "none",
-                  flex: "1",
-                }}
-                placeholder="Password"
-                value={password}
-                onChange={handlePasswordChange}
-              />
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginBottom: "1rem",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                paddingRight: "80px",
-                fontSize: 11,
-              }}
-            >
-              <input
-                type="checkbox"
-                id="rememberMe"
-                className="mr-2"
-                checked={rememberMe}
-                onChange={handleRememberMeChange}
-              />
-              <label htmlFor="rememberMe">Remember me</label>
-            </div>
-
-            <Link href="/userforgotpassword" style={{ fontSize: 11, color: "#FCC313" }}>
-              Forgot password
-            </Link>
-          </div>
+          
           <button
             type="submit"
             style={{
@@ -175,23 +110,9 @@ const UserLogin = () => {
               width: "100%",
             }}
           >
-            Login
+            Send Email
           </button>
-          <div style={{ marginTop: "1rem" }}>
-            <button
-              style={{
-                background: "red",
-                color: "white",
-                fontWeight: "bold",
-                padding: "0.75rem 1rem",
-                borderRadius: "8px",
-                width: "100%",
-              }}
-            >
-              Login with Google
-            </button>
-          </div>
-
+          
           <center>
             <div
               style={{
@@ -217,4 +138,4 @@ const UserLogin = () => {
   );
 };
 
-export default UserLogin;
+export default UserFotgotPassword;

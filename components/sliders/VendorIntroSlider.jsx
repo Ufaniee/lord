@@ -3,9 +3,8 @@
 import React, { useEffect, useState } from "react";
 import ButtonSlider from "./ButtonSlider";
 import { vendorIntroSlider } from "../../constants";
-import Button from "../global/Button";
-import Image from 'next/image';
-
+import Image from "next/image";
+import Link from "next/link";
 
 const VendorIntroSlider = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -14,7 +13,7 @@ const VendorIntroSlider = () => {
   const nextSlide = () => {
     if (slideIndex !== vendorIntroSlider.length) {
       setSlideIndex(slideIndex + 1);
-    } else if (slideIndex === dataSlider.length) {
+    } else if (slideIndex === vendorIntroSlider.length) {
       setSlideIndex(1);
     }
   };
@@ -69,18 +68,24 @@ const VendorIntroSlider = () => {
             }}
           >
             <div className="absolute text-center lg:text-left top-12 left-6 lg:left-28 w-[266px] lg:w-[500px] flex flex-col gap-4">
-              <h1 className="text-[36px] lg:text-[56px] font-semibold text-colorBold" style={{ color: obj.color1 }}>
+              <h1
+                className="text-[36px] lg:text-[56px] font-semibold text-colorBold"
+                style={{ color: obj.color1 }}
+              >
                 {obj.title}
               </h1>
-              <p className="text-[15px] lg:text-2xl text-colorNormal" style={{ color: obj.color2 }}>
+              <p
+                className="text-[15px] lg:text-2xl text-colorNormal"
+                style={{ color: obj.color2 }}
+              >
                 {obj.subTitle}
               </p>
-              <button
-                type="button"
+              <Link href="/vendorlogin"
                 className="px-6 py-3 rounded-lg text-lg w-[250px] mx-auto lg:mx-0"
                 style={{ backgroundColor: obj.buttonColor }}
-              >Start Selling Today</button>
-              
+              >
+                Start Selling Today
+              </Link>
             </div>
           </div>
         );

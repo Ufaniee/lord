@@ -14,7 +14,7 @@ const conpanyNavList = [
     {name: 'About', link: '/about'},
     {name: 'Product', link: '/products'},
     {name: 'Contact', link: '/contact'},
-    {name: 'Become a Vendor', link: '/vendorintro'}
+    {name: 'Become a Vendor', link: '/Sellers/Home'}
 ]
 
 const infoNavList = [

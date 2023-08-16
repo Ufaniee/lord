@@ -3,13 +3,13 @@
 import Layout from "../components/global/Layout";
 import React from "react";
 
-const VendorLogin = () => {
+const AdForgotPassword = () => {
   
   return (
     <Layout>
-      {/* vendorlogin page */}
+      {/* AdForgotPassword page */}
     </Layout>
   );
 };
 
-export default VendorLogin;
+export default AdForgotPassword;

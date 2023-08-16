@@ -30,10 +30,10 @@ const TopNav = () => {
           </Link>
           <Image src={emailIcon} alt="Email Icon" />
         </div>
-        <Link href="/userlogin">
+        <Link href="Authentication/userlogin">
           <Button type="button" buttonText="Sign In" className="text-primary" />
         </Link>
-        <Link href="/usersignup">
+        <Link href="Authentication/usersignup">
           <Button type="button" buttonText="Sign Up" className="bg-primary" />
         </Link>
       </div>
