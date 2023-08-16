@@ -136,7 +136,7 @@ const Home = () => {
             <br />
 
             <Link
-              href="Sellers/Authentication/vendorlogin"
+              href="/Sellers/Authentication/vendorlogin"
               className={buttonStyle}
             >
               Start Selling Today
@@ -234,7 +234,7 @@ const Home = () => {
           <br />
 
           <div className="text-center">
-            <Link href="/vendorlogin" className={buttonStyle}>
+            <Link href="/Sellers/Authemtication/vendorlogin" className={buttonStyle}>
               Start Selling Today
             </Link>
           </div>

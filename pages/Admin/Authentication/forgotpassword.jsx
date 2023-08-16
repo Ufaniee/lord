@@ -1,6 +1,6 @@
 /** @format */
 
-import Layout from "../components/global/Layout";
+import Layout from "../../../components/global/Layout";
 import React from "react";
 
 const AdForgotPassword = () => {

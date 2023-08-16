@@ -1,9 +1,9 @@
 /** @format */
 
-import Layout from "../components/global/Layout";
+import Layout from "../../../components/global/Layout";
 import React, { useState } from "react";
-import LockIcon from "../public/assets/Lock.svg";
-import UserIcon from "../public/assets/User1.svg";
+import LockIcon from "../../../public/assets/Lock.svg";
+import UserIcon from "../../../public/assets/User1.svg";
 import Image from "next/image";
 import Link from "next/link";
 
