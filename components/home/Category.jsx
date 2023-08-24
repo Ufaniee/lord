@@ -6,6 +6,8 @@ import beauty from '../../public/assets/category/beauty.svg'
 import devices from '../../public/assets/category/devices.svg'
 import sports from '../../public/assets/category/sports.svg'
 import fastfood from '../../public/assets/category/fastfood.svg'
+import custom from '../../public/assets/category/custom.svg'
+import toys from '../../public/assets/category/toys.svg'
 import Link from 'next/link';
 
 
@@ -17,7 +19,10 @@ const category = [
   { img: beauty, name: "Beauty Products" },
   { img: devices, name: "Electronics & Devices" },
   { img: sports, name: "Sporting Products" },
+  { img: toys, name: "Baby Products" },
+  { img: custom, name: "Customizable Products" },
   
+
 
 
 ]
