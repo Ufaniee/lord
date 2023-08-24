@@ -27,7 +27,7 @@ export const dataSlider = [
     subTitle:
       "Trustworthy payments, hassle-free returns, and exceptional service.",
     backgroundImage:
-      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1689219964/Slide2updated_gt4gwq.jpg",
+      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1689219964/Banners/Slide2updated_gt4gwq.jpg",
     color1: "#000000",
     color2: "#000000",
     buttonColor: "#ffffff",
@@ -37,7 +37,7 @@ export const dataSlider = [
     title: "Limited Edition Collections",
     subTitle: "Own something truly unique from exclusive collections.",
     backgroundImage:
-      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1689219964/Slide3updated_qtdelu.jpg",
+      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1689219964/Banners/Slide3updated_qtdelu.jpg",
     color1: "#000000",
     color2: "#000000",
     buttonColor: "#FCC313",
@@ -48,24 +48,12 @@ export const dataSlider = [
     subTitle:
       " Connect with like-minded individuals and unlock exclusive benefits.",
     backgroundImage:
-      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1689219964/Slide5updated_vehlpp.jpg",
+      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1689219964/Banners/Slide5updated_vehlpp.jpg",
     color1: "#000000",
     color2: "#000000",
     buttonColor: "#ffffff",
   },
 ];
-
-
-
-
-
-
-
-
-
-
-
-
 
 /** @format */
 
@@ -73,7 +61,8 @@ export const vendorIntroSlider = [
   {
     id: 1,
     title: "Start Selling Online Today",
-    subTitle: "Join BeelyDrop to sell your products online and reach a wider audience",
+    subTitle:
+      "Join BeelyDrop to sell your products online and reach a wider audience",
     backgroundImage:
       "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1689989114/Banners/Slide1_srr1xu.jpg",
     color1: "#000000",
@@ -93,8 +82,7 @@ export const vendorIntroSlider = [
   {
     id: 3,
     title: "Easy Logistics",
-    subTitle:
-      "Effortlessly manage orders and logistics with BeelyDrop.",
+    subTitle: "Effortlessly manage orders and logistics with BeelyDrop.",
     backgroundImage:
       "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1689989114/Banners/Slide3_rrnkzj.jpg",
     color1: "#000000",
