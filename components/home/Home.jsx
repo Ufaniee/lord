@@ -11,6 +11,7 @@ import Newsletter from './Newsletter'
 import Partners from './Partners'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
+import DownloadApp from './DownloadApp'
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           <NavBar/>
           <HeroSection/>
           <Category/>
+          <DownloadApp/>
           <NewArrival/>
           <Featured/>
           <Collections/>

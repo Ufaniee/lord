@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import ButtonSlider from "./ButtonSlider";
 import { dataSlider } from "../../constants";
 import Button from "../global/Button";
+import Link from 'next/link';
 
 const HeroSlider = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -73,11 +74,10 @@ const HeroSlider = () => {
               <p className="text-[15px] lg:text-2xl text-colorNormal" style={{ color: obj.color2 }}>
                 {obj.subTitle}
               </p>
-              <button
-                type="button"
-                className="px-6 py-3 rounded-lg text-lg w-[170px] mx-auto lg:mx-0"
+              <Link href="/Authentication/userlogin"
+                className="px-6 py-3 rounded-lg text-lg w-fit mx-auto lg:mx-0"
                 style={{ backgroundColor: obj.buttonColor }}
-              >Shop Now</button>
+              >Shop Now</Link>
             </div>
           </div>
         );
