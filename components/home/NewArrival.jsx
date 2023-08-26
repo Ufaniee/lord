@@ -21,7 +21,7 @@ const newArrival = [
 
 const NewArrival = () => {
   return (
-    <section className="lg:flex lg:flex-col lg:items-center my-40 lg:my-10">
+    <section className="lg:flex lg:flex-col lg:items-center my-20 lg:my-10">
       <div className="text-center my-10">
         <h2 className="text-3xl text-colorBold font-semibold">New Arrival</h2>
         <p className="text-gray">
