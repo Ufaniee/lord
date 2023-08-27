@@ -20,7 +20,7 @@ const featuredProducts = [
       "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1692852068/samples/mic_awwegv.webp",
   },
   {
-    name: "Camera HD + Lens",
+    name: "Curdden Wrist Watch - Gold",
     price: 29.99,
     promoPrice: 19.99,
     image:
