@@ -160,7 +160,7 @@ const VendorLogin = () => {
               <label htmlFor="rememberMe">Remember me</label>
             </div>
 
-            <Link href="/userforgotpassword" style={{ fontSize: 11, color: "#FCC313" }}>
+            <Link href="/Authentication/userforgotpassword" style={{ fontSize: 11, color: "#FCC313" }}>
               Forgot password
             </Link>
           </div>
@@ -201,7 +201,7 @@ const VendorLogin = () => {
                 paddingBottom: "40px",
               }}
             >
-              <Link href="/vendorsignup">
+              <Link href="/Sellers/Authentication/vendorsignup">
                 <p>
                   Do not have an account?
                   <span style={{ fontWeight: "bold", color: "#FCC313" }}>

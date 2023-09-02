@@ -41,6 +41,7 @@ const VendorSignUp = () => {
   return (
     <Layout>
       <div
+      className="py-8"
         style={{
           display: "flex",
           justifyContent: "center",
@@ -346,7 +347,7 @@ const VendorSignUp = () => {
                 paddingBottom: "40px",
               }}
             >
-              <Link href="/vendorlogin">
+              <Link href="/Sellers/Authentication/vendorlogin">
                 <p>
                   Already have an account?{" "}
                   <span style={{ fontWeight: "bold", color: "#FCC313" }}>

@@ -80,7 +80,7 @@ const VendorIntroSlider = () => {
               >
                 {obj.subTitle}
               </p>
-              <Link href="/vendorlogin"
+              <Link href="/Sellers/Authentication/vendorlogin"
                 className="px-6 py-3 rounded-lg text-lg w-[250px] mx-auto lg:mx-0"
                 style={{ backgroundColor: obj.buttonColor }}
               >

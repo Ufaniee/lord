@@ -122,14 +122,14 @@ const UserFotgotPassword = () => {
                 paddingBottom: "40px",
               }}
             >
-              <Link href="/usersignup">
+              {/* <Link href="/usersignup">
                 <p>
                   Do not have an account?
                   <span style={{ fontWeight: "bold", color: "#FCC313" }}>
                     Create Account
                   </span>
                 </p>
-              </Link>
+              </Link> */}
             </div>
           </center>
         </form>

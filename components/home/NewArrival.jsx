@@ -10,7 +10,7 @@ const newArrival = [
     image:
       "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1692850898/samples/galaxy_zfold3_zflip35g_main_kv_xhfka0.jpg",
   },
-  { name: "2021 Mens Casual Board Shoes Running Sneakers  ", price: 299, image: "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1692850311/samples/snekers_y84nbh.jpg" },
+  { name: "2021 Mens Casual Board Sneakers  ", price: 299, image: "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1692850311/samples/snekers_y84nbh.jpg" },
   {
     name: "HIGHLAND LT ZIP HOODY",
     price: 299,
