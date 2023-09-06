@@ -6,7 +6,7 @@ const ProductHeader = () => {
         <span>Home &gt; <span className='text-primary'>All Categories</span></span>
         <div className='flex flex-col gap-4 mx-auto text-center w-full lg:w-[44%] my-5'>
             <h2 className='text-2xl font-semibold text-colorBold'>All Categories</h2>
-            <p className='text-lg text-colorNormal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <p className='text-lg text-colorNormal'></p>
         </div>
     </div>
   )

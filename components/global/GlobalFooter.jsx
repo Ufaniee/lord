@@ -34,11 +34,11 @@ const GlobalFooter = () => {
                 <div className='flex flex-col items-center lg:items-start gap-4'>
                     <div className='flex gap-4'>
                         <Image src={callIcon} alt="call icon" />
-                        <span>+12 345 6789 0</span>
+                        <span>+234-8140563-810</span>
                     </div>
                     <div className='flex gap-4'>
                         <Image src={emailIcon} alt="email icon" />
-                        <span>support@tronix.com</span>
+                        <span>contact@beelydrop.com</span>
                     </div>
                 </div>
            </div>

@@ -9,6 +9,8 @@ import sports from '../../public/assets/category/sports.svg'
 import fastfood from '../../public/assets/category/fastfood.svg'
 import Partners from '../home/Partners'
 import ProductList from './ProductList'
+import custom from '../../public/assets/category/custom.svg'
+import toys from '../../public/assets/category/toys.svg'
 
 const category = [
   { img: fastfood, name: "Food" },
@@ -18,6 +20,8 @@ const category = [
   { img: beauty, name: "Beauty Products" },
   { img: devices, name: "Electronics & Devices" },
   { img: sports, name: "Sporting Products" },
+  { img: toys, name: "Baby Products" },
+  { img: custom, name: "Customizable Products" },
 ]
 
 const ProductCategories = () => {
@@ -33,10 +37,10 @@ const ProductCategories = () => {
       </div>
 
       {/* Partners */}
-      <div className='my-10'>
+      {/* <div className='my-10'>
         <h3 className='text-colorBold font-semibold text-2xl'>Featured Brand</h3>
         <Partners className='justify-between gap-5 mt-4 flex-wrap'/>
-      </div>
+      </div> */}
 
       {/* Product Listing */}
       <ProductList/>
