@@ -12,15 +12,15 @@ import Link from 'next/link';
 
 
 const category = [
-  { img: fastfood, name: "Food", link: '/food', link: '/Products'},
-  { img: groceries, name: "Groceries", link: '/Products' },
-  { img: clothing, name: "Fashion & Clothing", link: '/Products' },
-  { img: health, name: "Health Products", link: '/Products' },
-  { img: beauty, name: "Beauty Products" , link: '/Products'},
-  { img: devices, name: "Electronics & Devices", link: '/Products' },
+  { img: fastfood, name: "Food", link: '/food', link: '/productslist'},
+  { img: groceries, name: "Groceries", link: '/productslist' },
+  { img: clothing, name: "Fashion & Clothing", link: '/productslist' },
+  { img: health, name: "Health Products", link: '/productslist' },
+  { img: beauty, name: "Beauty Products" , link: '/productslist'},
+  { img: devices, name: "Electronics & Devices", link: '/productslist' },
   { img: sports, name: "Sporting Products", link: '/Products' },
-  { img: toys, name: "Baby Products", link: '/Products' },
-  { img: custom, name: "Customizable Products", link: '/Products' },
+  { img: toys, name: "Baby Products", link: '/productslist' },
+  { img: custom, name: "Customizable Products", link: '/productslist' },
   
 
 
