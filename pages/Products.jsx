@@ -10,6 +10,7 @@ import ProductNotFound from "../components/product/ProductNotFound";
 import Link from "next/link";
 import products from "../data/products.json";
 import Layout from "../components/global/Layout";
+import Image from "next/image";
 
 // const products = [
 //   { id:"1", name: "Smartphone Camera", price: 1000.00, star: 5.0, sold: 99, img:'' },
@@ -36,11 +37,12 @@ const ProductList = () => {
               {products.map((product, index) => (
                 <Link key={index} href={`/products/${product.id}`}>
                   <div className="flex flex-col items-center gap-4 p-8 border border-gray rounded-3xl">
-                    <div className="w-[150px] h-[150px] bg-gray rounded-[32px]">
-                      <img
+                    <div className="w-[150px] h-[150px]">
+                      <Image
                         src={product.img}
                         alt={product.name}
-                        className="w-[150px] h-[150px]"
+                        width={150}
+                        height={150}
                       />
                     </div>{" "}
                     <div className="flex flex-col items-center gap-2">
