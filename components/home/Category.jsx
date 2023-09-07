@@ -21,10 +21,6 @@ const category = [
   { img: sports, name: "Sporting Products", link: '/Products' },
   { img: toys, name: "Baby Products", link: '/productslist' },
   { img: custom, name: "Customizable Products", link: '/productslist' },
-  
-
-
-
 ]
 
 
