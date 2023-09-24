@@ -50,7 +50,8 @@ const Sidebar = () => {
   const router = useRouter();
 
   const activeMenu = useMemo(
-    () => menuItems.find((menu) => menu.link === router.pathname),
+    () =>
+      menuItems.find((menu) => menu.link === router.pathname) || menuItems[0], // Use the first menu item as the default
     [router.pathname]
   );
 
