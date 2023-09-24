@@ -152,10 +152,10 @@ const Sidebar = () => {
         </div>
 
         <div className="flex flex-col items-start mt-4">
-          {menuItems.map(({ icon: Icon, ...menu }) => {
+          {menuItems.map(({ id, icon: Icon, ...menu }) => {
             const classes = getNavItemClasses(menu);
             return (
-              <div className={classes}>
+              <div key={id} className={classes}>
                 <Link href={menu.link}>
                   <div className="flex py-3 px-3 items-center w-full h-full">
                     <div style={{ width: "2.5rem" }}>
