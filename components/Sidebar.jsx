@@ -69,11 +69,12 @@ const Sidebar = () => {
     }
   );
 
-  const getNavItemClasses = () => {
+  const getNavItemClasses = (menu) => {
+    console.log("menu:", menu); // Add this line for debugging
     return classNames(
       "flex items-center cursor-pointer hover:bg-light-lighter rounded w-full overflow-hidden whitespace-nowrap",
       {
-        ["bg-light-lighter"]: activeMenu.id === menuItems.id,
+        ["bg-light-lighter"]: activeMenu.id === menu.id,
       }
     );
   };
@@ -128,6 +129,7 @@ const Sidebar = () => {
               width={200}
               height={100}
               alt="vendor"
+              className="rounded-full"
             />
           </center>
           <div className="pt-2">
