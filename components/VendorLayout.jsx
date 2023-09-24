@@ -1,12 +1,13 @@
-// components/Layout.js
 import React from 'react';
 import Sidebar from './Sidebar';
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex py-4">
+    <div className="h- flex flex-row">
       <Sidebar />
-      <main className="flex-grow pl-4">{children}</main>
+      <main className="flex-grow p-4 text-black border-dashed bg-[#F2F7FA] overflow-auto">
+        {children}
+      </main>
     </div>
   );
 };

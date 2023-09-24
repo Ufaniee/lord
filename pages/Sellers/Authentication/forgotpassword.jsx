@@ -3,14 +3,13 @@
 import Layout from "../../../components/global/Layout";
 import React from "react";
 
-const HandleOrder = () => {
+const ForgotPassword = () => {
   
   return (
     <Layout>
-      {/* HandleOrder page */}
+      ForgotPassword
     </Layout>
   );
 };
 
-export default HandleOrder;
-
+export default ForgotPassword;
