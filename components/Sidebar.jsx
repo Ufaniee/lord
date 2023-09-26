@@ -42,12 +42,12 @@ const menuItems = [
     icon: VideosIcon,
     link: "/Sellers/Dashboard/settings",
   },
-  {
-    id: 5,
-    label: "Log Out",
-    icon: LogoutIcon,
-    link: "/Sellers/Authentication/login",
-  },
+  // {
+  //   id: 5,
+  //   label: "Log Out",
+  //   icon: LogoutIcon,
+  //   link: "/Sellers/Authentication/login",
+  // },
 ];
 
 const Sidebar = () => {
@@ -63,10 +63,10 @@ const Sidebar = () => {
   );
 
   const wrapperClasses = classNames(
-    "h- px-4 pt-8 pb-4 bg-light flex justify-between flex-col",
+    "h- px-1 pt-8 pb-4 bg-light flex justify-between flex-col",
     {
       ["w-80"]: !toggleCollapse,
-      ["w-20"]: toggleCollapse,
+      ["w-12"]: toggleCollapse,
     }
   );
 
@@ -188,7 +188,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* <div className={`${getNavItemClasses({})} px-3 py-4`}>
+      <div className={`${getNavItemClasses({})} px-3 py-4`}>
         <div style={{ width: "2.5rem" }}>
           <LogoutIcon />
         </div>
@@ -197,7 +197,7 @@ const Sidebar = () => {
             Logout
           </span>
         )}
-      </div> */}
+      </div>
     </div>
   );
 };
