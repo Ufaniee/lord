@@ -5,3 +5,4 @@ export { default as VideosIcon } from "./SettingIcon";
 export { default as CollapsIcon } from "./CollapsIcon";
 export { default as LogoIcon } from "./Logo";
 export { default as LogoutIcon } from "./LogoutIcon";
+export { default as AccountIcon } from "./AccountIcon";

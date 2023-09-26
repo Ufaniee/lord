@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
       </div>
       <div >{children}</div>
 
-      <GlobalNewsletter />
       <GlobalFooter />
     </>
   );

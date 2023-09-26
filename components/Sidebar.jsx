@@ -8,6 +8,7 @@ import {
   ProductsIcon,
   CollapsIcon,
   HomeIcon,
+  AccountIcon,
   LogoIcon,
   LogoutIcon,
   MessagesIcon,
@@ -17,6 +18,12 @@ import Image from "next/image";
 
 const menuItems = [
   { id: 1, label: "Dashboard", icon: HomeIcon, link: "/Sellers/Dashboard" },
+  {
+    id: 2,
+    label: "Account",
+    icon: AccountIcon,
+    link: "/Sellers/Dashboard/products",
+  },
   {
     id: 2,
     label: "Product",

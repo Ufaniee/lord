@@ -14,6 +14,11 @@ const ChartComponent = () => {
         chartInstance.current.destroy();
       }
 
+      // Create a gradient fill for the entire area under the line with consistent opacity
+      const gradient = ctx.createLinearGradient(0, 0, 0, chartRef.current.clientHeight);
+      gradient.addColorStop(0, 'rgba(177, 101, 233, 0.5)'); // Starting color with opacity
+      gradient.addColorStop(1, 'rgba(177, 101, 233, 0.1)'); // Ending color with opacity
+
       // Create a new chart instance
       chartInstance.current = new Chart(ctx, {
         type: 'line',
@@ -22,12 +27,13 @@ const ChartComponent = () => {
           datasets: [{
             data: [30, 50, 80, 81, 56, 55, 40],
             fill: true,
-            borderColor: 'rgb(75, 192, 192)',
+            backgroundColor: gradient, // Use the gradient for fill
+            borderColor: '#B165E9', // Set line color to #B165E9
             tension: 0.1,
           }],
         },
         options: {
-            responsive: true, // Allow chart to be responsive
+          responsive: true, // Allow chart to be responsive
           maintainAspectRatio: false, // Let the chart adapt to the container size
           scales: {
             x: {
@@ -47,6 +53,19 @@ const ChartComponent = () => {
             legend: {
               display: false, // Hide the legend
             },
+            tooltip: {
+              enabled: true,
+              callbacks: {
+                title: (tooltipItem) => {
+                  // You can customize the tooltip title here
+                  return ` ${tooltipItem[0].label}`;
+                },
+                label: (tooltipItem) => {
+                  // You can customize the tooltip label here
+                  return `Orders: ${tooltipItem.formattedValue}`;
+                },
+              },
+            },
           },
         },
       });
@@ -54,7 +73,7 @@ const ChartComponent = () => {
   }, []);
 
   return (
-    <div className="w-[100%] md:w-[100%] lg:w-[100%] h-[400px] md:h-[400px]">
+    <div className="w-[100%] md:w-[100%] lg:w-[100%] h-[400px] md:h-[400px] py-8">
       <canvas className='' ref={chartRef} />
     </div>
   );
