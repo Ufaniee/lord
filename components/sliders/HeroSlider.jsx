@@ -40,7 +40,7 @@ const HeroSlider = () => {
       } else if (slideIndex === dataSlider.length) {
         setSlideIndex(1);
       }
-    }, 10000);
+    }, 5000);
     return () => {
       resetTimeout();
     };

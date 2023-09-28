@@ -17,30 +17,36 @@ import {
 import Image from "next/image";
 
 const menuItems = [
-  { id: 1, label: "Dashboard", icon: HomeIcon, link: "/Sellers/Dashboard" },
+  { id: 1, label: "Dashboard", icon: HomeIcon, link: "/vendor/Dashboard" },
   {
     id: 2,
     label: "Account",
     icon: AccountIcon,
-    link: "/Sellers/Dashboard/products",
-  },
-  {
-    id: 2,
-    label: "Product",
-    icon: ProductsIcon,
-    link: "/Sellers/Dashboard/products",
+    link: "/vendor/Dashboard/account",
   },
   {
     id: 3,
-    label: "Messages",
-    icon: MessagesIcon,
-    link: "/Sellers/Dashboard/messages",
+    label: "Orders",
+    icon: VideosIcon,
+    link: "/vendor/Dashboard/settings",
   },
   {
     id: 4,
+    label: "Product",
+    icon: ProductsIcon,
+    link: "/vendor/Dashboard/products",
+  },
+  {
+    id: 5,
+    label: "Messages",
+    icon: MessagesIcon,
+    link: "/vendor/Dashboard/messages",
+  },
+  {
+    id: 6,
     label: "Setting",
     icon: VideosIcon,
-    link: "/Sellers/Dashboard/settings",
+    link: "/vendor/Dashboard/settings",
   },
   // {
   //   id: 5,

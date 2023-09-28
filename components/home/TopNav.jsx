@@ -13,7 +13,7 @@ const TopNav = () => {
   return (
     <section className="hidden lg:flex justify-between items-center">
       <Link href="/">
-        <Image src={logo} alt="logo" />
+        <Image src={logo} alt="logo" width={64} height={64} />
       </Link>
       <div className="flex gap-4">
         <Image src={fourDots} alt="Four Dots icon" />

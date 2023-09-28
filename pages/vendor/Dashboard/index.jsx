@@ -30,17 +30,6 @@ const index = () => {
               <div className="bg-blue-200 p-4 mx-2 bg-white shadow-lg  rounded-lg">
                 <div className="flex flex-row">
                   <div className="bg-[#F2F7FA] p-4 mr-2 rounded-full ">
-                    <Image src={salesIcon} width={24} height={24} alt="sales" />
-                  </div>
-                  <div>
-                    <h1 className="font-bold text-xl ">$2,700</h1>
-                    <p>Total Sales</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-blue-200 p-4 mx-2 bg-white shadow-lg  rounded-lg">
-                <div className="flex flex-row">
-                  <div className="bg-[#F2F7FA] p-4 mr-2 rounded-full ">
                     <Image
                       src={BalaceIcon}
                       width={24}
@@ -54,6 +43,19 @@ const index = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="bg-blue-200 p-4 mx-2 bg-white shadow-lg  rounded-lg">
+                <div className="flex flex-row">
+                  <div className="bg-[#F2F7FA] p-4 mr-2 rounded-full ">
+                    <Image src={salesIcon} width={24} height={24} alt="sales" />
+                  </div>
+                  <div>
+                    <h1 className="font-bold text-xl ">$2,700</h1>
+                    <p>Total Sales</p>
+                  </div>
+                </div>
+              </div>
+
               <div className="bg-blue-200 p-4 mx-2 bg-white shadow-lg  rounded-lg">
                 <div className="flex flex-row">
                   <div className="bg-[#F2F7FA] p-4 mr-2 rounded-full ">
@@ -66,7 +68,7 @@ const index = () => {
                   </div>
                   <div>
                     <h1 className="font-bold text-xl">34</h1>
-                    <p>Products</p>
+                    <p>Avaliable Products</p>
                   </div>
                 </div>
               </div>

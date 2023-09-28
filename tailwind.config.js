@@ -19,7 +19,11 @@ module.exports = {
       'colorNormal': '#A7A7A7',
       'milky': 'rgba(244, 107, 91, 0.05)',
       'gray': '#C4C4C4',
-      'white': '#FFFFFF'
+      'white': '#FFFFFF',
+      'black': '#0000000',
+      'red': '#FF1919',
+      'green': '#14B918',
+      
     },
   },
   plugins: [],

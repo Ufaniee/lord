@@ -6,34 +6,34 @@ import { FaHeart } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import Button from "../global/Button";
-import ProductNotFound from "./ProductNotFound";
+import ProductNotFound from "../product/ProductNotFound";
 import Link from "next/link";
-import products from "../../data/products.json";
+import products from "../../data/vendorProducts.json";
 import Image from "next/image";
+import plusIcon from "@/public/assets/plus.png";
 
-
-// const products = [
-//   { id:"1", name: "Smartphone Camera", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"2", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"5", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"3", name: "Smartphone 5G", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"6", name: "Smartphone Con", price: 1000.00,star: 5.0, sold: 99, img:'' },
-//   { id:"7", name: "Smartphone Con",  price: 1000.00, star: 5.0, sold: 99, img:'' }
-// ]
 
 const ProductList = () => {
   return (
-    <div className="mt-10">
-      <div className="flex justify-between">
+    <div className="mt-4">
+      <div className="flex justify-between items-center">
         <h3 className="text-colorBold font-semibold text-2xl">Product List</h3>
-        <span className="text-primary">View All</span>
+
+        <div className=" md:inline-block hidden text-black font-bold bg-primary p-4 rounded-full">
+          Add Product
+        </div>
+      
+        <div className="sm:hidden  bg-primary p-4 rounded-full">
+          <Image src={plusIcon} width={24} height={24} />
+        </div>
       </div>
       {products.length > 0 ? (
         <>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 content-between mt-5">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 content-between mt-5">
             {products.map((product, index) => (
-              <Link key={index} href={`/products/${product.id}`}>
-                <div className="flex flex-col items-center gap-4 p-8 border border-gray rounded-3xl">
+              <Link key={index} href={`/vendor/Dashboard/products/${product.id}`}>
+              {/* <Link key={index} href={`/products/${product.id}`}> */}
+                <div className="flex flex-col items-center gap-4 p-8 border border-gray rounded-3xl bg-white">
                   <div className="w-[150px] h-[150px]">
                     <Image
                       src={product.img}
@@ -46,18 +46,21 @@ const ProductList = () => {
                     <h4 className="">{product.name}</h4>
                     <span className="text-primary">${product.price}</span>
                     <span className="flex items-center gap-1 text-colorNormal text-xs">
-                      <MdStarRate className="text-primary" />
-                      <span>
-                        {product.star} | Sold {product.sold}
+                      {/* <MdStarRate className="text-primary" /> */}
+                      
+                      <span className="mr-4">
+                      Avaliable:  <span className="text-black font-bold">{product.avaliableProducts}</span>
+                      </span>
+                      <span className="ml-4">
+                         Sold: <span className="text-black font-bold">{product.sold}</span>
                       </span>
                     </span>
                     <span className="flex items-center gap-4">
                       <Button
-                        buttonText="Add to Cart"
+                        buttonText="Veiw Details"
                         type="button"
                         className="bg-primary py-2 text-sm"
                       />
-                      <FaHeart className="text-colorNormal" />
                     </span>
                   </div>
                 </div>
