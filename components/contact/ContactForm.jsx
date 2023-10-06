@@ -3,7 +3,7 @@ import Button from '../global/Button'
 
 const ContactForm = () => {
   return (
-    <form className='flex flex-col gap-4 w-full lg:w-3/5 text-sm text-colorBold p-8 border border-colorBold rounded-[32px]'>
+    <form className='flex flex-col gap-4 w-full lg:w-3/5 text-sm text-colorNormal p-8 border border-colorNormal rounded-[32px]'>
             <div>
                 <label htmlFor="name">
                     Name *

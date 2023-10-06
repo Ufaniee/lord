@@ -6,6 +6,7 @@ import LockIcon from "../../public/assets/Lock.svg";
 import UserIcon from "../../public/assets/User1.svg";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../../public/assets/siteLogo.jpg";
 
 const UserSignUp = () => {
   const [email, setEmail] = useState("");
@@ -58,7 +59,11 @@ const UserSignUp = () => {
               marginBottom: "1rem",
             }}
           >
-            Create Your Shopping Account
+            <div className="image -center">
+            <Image src={logo} alt="Image" width={200} height={100}/>
+            </div>
+           
+            Login To Your Shopping Account
           </h2>
           <div
             style={{

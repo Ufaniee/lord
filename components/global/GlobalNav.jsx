@@ -11,7 +11,7 @@ const GlobalNav = () => {
   return (
     <section className='hidden lg:flex justify-between items-center'>
         <Link href='/'>
-            <Image src={logo} alt="logo" />
+            <Image src={logo} alt="logo" width={58} height={58}/>
         </Link>
         <NavBar />
         <SearchInput/>

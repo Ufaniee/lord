@@ -7,10 +7,11 @@ const TimingComponent = ({value, unitOfTime, className}) => (
     </div>
 )
 
-const Timing = ({hrs, min, sec, className}) => {
+const Timing = ({days, hrs, min, sec, className}) => {
 
   return (
     <div className='flex gap-2 my-7'>
+       <TimingComponent value={days} unitOfTime='Days' className={className}/>
         <TimingComponent value={hrs} unitOfTime='Hrs' className={className}/>
         <TimingComponent value={min} unitOfTime='Min' className={className}/>
         <TimingComponent value={sec} unitOfTime='Sec' className={className}/>

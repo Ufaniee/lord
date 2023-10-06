@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -19,7 +20,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #FCC313;
+  background-color: #3120e3;
   border-radius: 4px;
 }
 
@@ -40,7 +41,7 @@ input[type='range'] {
 }
 
 input[type='range']::-webkit-slider-thumb {
-  background-color: #FCC313;
+  background-color: #1d36ee;
 }
 
 /*Chrome*/
@@ -90,7 +91,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #FCC313 !important;
+  background-color: #000000 !important;
 }
 
 .my-custom-pagination-div {
@@ -101,7 +102,7 @@ input[type='range']::-webkit-slider-thumb {
 
 .my-custom-pagination-div-active {
   /* background-color: #FCC313 !important; */
-  color: #FCC313 !important;
+  color: #163bdf !important;
 
 }
 
@@ -111,7 +112,7 @@ input[type='range']::-webkit-slider-thumb {
 
 .flash-sales .swiper-button-prev,
 .flash-sales .swiper-button-next {
-  background: #FCC313;
+  background: #2610d0;
   /* box-shadow: 0px 4px 10px rgba(15, 27, 51, 0.1); */
   top: 100%;
   width: 50px;

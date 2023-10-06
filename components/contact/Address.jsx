@@ -11,24 +11,24 @@ import { FaFacebookSquare } from "react-icons/fa";
 const Address = () => {
 
     
-const instagramUrl = 'https://instagram.com/beelydrop?igshid=MzNlNGNkZWQ4Mg==';
-const twitterUrl = 'https://twitter.com/BeelyDrop?s=09';
-const facebookUrl = 'https://www.facebook.com/profile.php?id=100093177590061&mibextid=ZbWKwL';
+const instagramUrl = 'https://instagram.com/ufaniee';
+const twitterUrl = 'https://twitter.com/ufaniee';
+const facebookUrl = 'https://www.facebook.com/ufaniee';
 
   return (
     <div className="flex flex-col gap-4 w-full lg:w-2/5 bg-primary p-8 rounded-[32px]">
       <h2 className="font-semibold text-2xl">Contact</h2>
       <div className="flex gap-4 items-center">
         <FaMapMarkerAlt />
-        <p className="w-[70%]">17, Raphel St. Ojo, Lagos, Nigeria</p>
+        <p className="w-[70%]">Lugbe,Abuja</p>
       </div>
       <div className="flex gap-4 items-center">
         <FaPhoneAlt />
-        <p>+234-8140563-810</p>
+        <p>+234-803270-1991</p>
       </div>
       <div className="flex gap-4 items-center">
         <FaRegEnvelope />
-        <p>contact@beelydrop.com</p>
+        <p>anie.ufan@gmail.com</p>
       </div>
       <div className="flex flex-col gap-2 mt-6">
         <h3>Follow Us</h3>

@@ -1,59 +1,48 @@
 /** @format */
 
 import React from "react";
+import Button from "../global/Button";
 
 const Collections = () => {
   return (
     <section className="my-20">
-      <div className="text-center my-10">
-        <h2 className="text-3xl text-colorBold font-semibold">
-          Our Collections
-        </h2>
-        <p className="text-gray">
-          A wide variety of products made easier to find. Right at your
-          fingertips
-        </p>
-      </div>
-      <div className="flex lg:flex-row flex-col justify-between gap-4">
-        <div
-          className="lg:w-[50%] w-full rounded-xl border border-gray"
-          style={{
-            backgroundImage:
-              "url('https://res.cloudinary.com/dcb4ilgmr/image/upload/v1693024522/utilities/pexels-chan-walrus-958545_hishe3.jpg')",
-            backgroundSize: "cover", // Adjust as needed
-            backgroundPosition: "center", // Adjust as needed
-            backgroundRepeat: "no-repeat", // Adjust as needed
-          }}
-        >
-          <div className="mx-auto w-72 bg-[#FAFAFA] opacity-90 rounded-xl text-center my-16 p-6">
-            <h2 className="text-colorBold text-lg font-bold mb-2">
-              Uncover Culinary Delights Around You
-            </h2>
-            <p className="text-xs">Explore Nearby Restaurants with BeelyDrop</p>
+    <div className="bg-hero-image  bg-cover bg-center h-[400px] flex items-center justify-evenly">
+                <div className='w-full lg:w-[440px] flex flex-col gap-2 text-white'>
+                  <h2 className='font-bold'>An easy way to send money to Suppliers</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+              <div className='text-white mt-10 lg:mt-0 lg:pl-14 w-full lg:w-1/2'>
+                <div className='w-full lg:w-[440px] flex flex-col gap-2'>
+                    <h3 className='font-bold'>Send Quote to Suppliers</h3>
+                  </div>
+                <form>
+                    <div>
+                        <input type="text" placeholder="What item do you need?" required className='rounded-lg w-full h-11 px-3 py-2 border border-colorNormal focus:outline-none' />
+                    </div>
+                    <div>
+                        <textarea name="review" id="" cols="30" rows="5" placeholder="Type More details" required className='rounded-lg w-full px-3 py-2 border border-colorNormal focus:outline-none'></textarea>
+                    </div>
+
+                    <div className="flex justify-evenly text-[#070707]">
+                    <div className="quantity">
+                      <Button type='submit' buttonText='Quantity' className='bg-white w-32 text-sm font-semibold' />
+                    </div>
+
+                    <div className="quant">
+                      <Button type='submit' buttonText='Pcs' className='bg-white w-32 text-sm font-semibold' />
+                    </div>
+                  </div>
+
+
+                  <Button type='submit' buttonText='Submit' className='bg-red w-32 text-sm font-semibold' />
+                  
+
+                </form>
+
           </div>
-        </div>
-        <div
-          className="lg:w-[50%] w-full bg-gray rounded-xl border border-gray"
-          style={{
-            backgroundImage:
-              "url('https://res.cloudinary.com/dcb4ilgmr/image/upload/v1693025124/utilities/black-background-with-gold-black-ornate-frames-black-background_901003-2957_vqykxi.avif')",
-            backgroundSize: "cover", // Adjust as needed
-            backgroundPosition: "center", // Adjust as needed
-            backgroundRepeat: "no-repeat", // Adjust as needed
-          }}
-        >
-          <div className="mx-auto w-72 bg-[#FAFAFA] opacity-80 rounded-xl text-center my-16 p-6">
-            <h2 className="text-colorBold text-lg font-bold mb-2">
-              Craft Your Own Unique Style
-            </h2>
-            <p className="text-xs">
-              Personalize Your Product to Match Your Tastes and Preferences.
-            </p>
-          </div>
-        </div>
-      </div>
+    </div>
     </section>
-  );
+  )
 };
 
 export default Collections;

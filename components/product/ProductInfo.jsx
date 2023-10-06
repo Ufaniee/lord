@@ -21,7 +21,9 @@ const ProductInfo = ({id}) => {
 
         {/* Product Pictures */}
         <div className='flex flex-col w-full mx-auto lg:w-1/2 gap-4'>
-            <div className='w-full h-[350px] bg-gray'></div>
+            <div className='w-full h-[350px] bg-gray'>
+
+            </div>
             <div className='flex justify-center gap-2'>
                 <div className='w-[100px] h-[100px] bg-gray'></div>
                 <div className='w-[100px] h-[100px] bg-gray'></div>
@@ -30,20 +32,20 @@ const ProductInfo = ({id}) => {
         </div>
 
         {/* Product Detail information */}
-        <div className='w-full lg:w-1/2 text-colorBold text-center lg:text-left'>
-            <span className='hidden lg:block'>Product &nbsp; &gt; &nbsp; <span className='text-primary'> {data?.name}</span></span>
+        <div className='w-full lg:w-1/2 text-colorNormal text-center lg:text-left'>
+            <span className='hidden lg:block'>Product &nbsp; &gt; &nbsp; <span className='text-colorNormal'> {data?.name}</span></span>
             <div className='mt-3 flex flex-col lg:flex-row justify-between items-center text-sm'>
                 <div className='flex items-center gap-2'>
                     <span className='font-bold'>{data?.star}.0</span>
                     <span className='flex gap-1'>
                         {Array.from({length: data?.star}).map((star, index) => (
-                            <MdStarRate key={index} className='text-primary'/>
+                            <MdStarRate key={index} className='text-yellow'/>
                         ))}
                     </span>
                     <span>Review (12) &nbsp; | &nbsp; Sold {data?.sold}</span>
                 </div>
                 <div>
-                    <Button className='flex items-center gap-2 font-semibold'><FaHeart className='text-primary'/>Add to Wishlist</Button>
+                    <Button className='flex items-center gap-2 font-semibold'><FaHeart className='text-red'/>Add to Wishlist</Button>
                 </div>
             </div>
             <div className='flex flex-col gap-5 border-b border-colorNormal pb-6'>
@@ -70,9 +72,9 @@ const ProductInfo = ({id}) => {
                     <span className='text-primary'>1</span>
                     <Button type='button' buttonText='+' className='bg-primary font-bold'/>
                 </div>
-                <div className='flex items-center gap-4'>
+                <div className='flex items-center gap-4' >
                     <Button type='button' buttonText='Chat' className='border border-primary text-sm font-semibold'/>
-                    <Button type='button' buttonText='Add to Cart' className='bg-primary text-sm font-semibold'/>
+                    <Button type='button' buttonText='Add to Cart' className='bg-gray text-sm font-semibold'/>
                 </div>
             </div>
         </div>

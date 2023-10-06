@@ -4,7 +4,7 @@ import Button from '../global/Button'
 
 const AddReview = () => {
   return (
-    <div className='text-colorBold mt-10 lg:mt-0 lg:pl-14 w-full lg:w-1/2'>
+    <div className='text-colorNormal mt-10 lg:mt-0 lg:pl-14 w-full lg:w-1/2'>
         <div className='w-full lg:w-[440px] flex flex-col gap-2'>
             <h3 className='font-semibold'>Add Your Review</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -28,7 +28,7 @@ const AddReview = () => {
             <span className='font-semibold'>Rating</span>
             <span className='flex gap-1'>
                 {Array.from({length: 5}).map((star, index) => (
-                    <MdStarRate key={index} className='text-primary text-lg'/>
+                    <MdStarRate key={index} className='text-yellow text-lg'/>
                   ))}
             </span>
           </div>

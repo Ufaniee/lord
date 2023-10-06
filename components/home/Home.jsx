@@ -1,17 +1,14 @@
 import TopHeader from './TopHeader'
 import TopNav from './TopNav'
 import NavBar from './NavBar'
-import HeroSection from './HeroSection'
-import Category from './Category'
+import DownloadApp from './DownloadApp'
 import NewArrival from './NewArrival'
 import Featured from './Featured'
-import Collections from './Collections'
-import FlashSale from './FlashSale'
 import Newsletter from './Newsletter'
-import Partners from './Partners'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
-import DownloadApp from './DownloadApp'
+import FlashSale from './FlashSale'
+import Collections from './Collections'
 
 const Home = () => {
   return (
@@ -19,17 +16,14 @@ const Home = () => {
       <div className='w-[90%] mx-auto'>
           <TopHeader/>
           <TopNav/>
-          <MobileNav/>
           <NavBar/>
-          <HeroSection/>
-          <Category/>
           <DownloadApp/>
-          <NewArrival/>
+          <MobileNav/>
           <Featured/>
+          <NewArrival/>
           <Collections/>
           <FlashSale/>
           <Newsletter/>
-          <Partners className='flex-wrap justify-center gap-14 lg:gap-20'/>
       </div>
       <Footer/>
     </>

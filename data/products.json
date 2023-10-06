@@ -3,7 +3,7 @@
       "id":"1",
       "name": "Samungung Z Fold",
       "price": 1000.00,
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "description":"Lorem ipsum dolor sit amet .",
       "flashsale":true,
       "category":"camera",
       "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019445/utilities/samsung-galaxy-z-fold-4_wlnktk.jpg",
@@ -15,7 +15,7 @@
       "id":"2",
       "name": "USB Speaker",
       "price": 100.00,
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "description":"Lorem ipsum dolor sit amet .",
       "limitedOffer":true,
       "category":"computer & laptop",
       "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019445/utilities/Computer-Speakers-Wired-PC-Speaker-2-0-USB-Gaming-Powered-Stereo-Mini-Multimedia-Volume-Control-with-RGB-Lights-3-5mm-Aux-Input_8e920b0f-5117-4062-a6e1-d962629cfa2f.54df277348bbaf3f72a26ac3fd8afc6b_rpoqfu.webp",
@@ -24,10 +24,10 @@
   
     },
     {
-      "id":"5",
+      "id":"3",
       "name": "Smart TV",
       "price": 48.00,
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "description":"Lorem ipsum dolor sit amet .",
       "limitedOffer":true,
       "category":"computer & laptop",
       "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019447/utilities/SLE32S700TCS-2_p6bkdc.jpg",
@@ -35,10 +35,10 @@
       "sold": 99
     },
     {
-       "id":"3",
+       "id":"4",
       "name": "Smart 5G Wifi",
       "price": 400.00,
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "description":"Lorem ipsum dolor sit amet . ",
       "limitedOffer":true,
       "category":"mobile & tablet",
       "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019441/utilities/70200_1620724753_ctqgzu.webp",
@@ -47,30 +47,61 @@
   
     },
       {
-       "id":"6",
+       "id":"5",
       "name": "Camera HD + Lens",
       "price": 29.00,
       "flashsale":true,
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
+      "description":"Lorem ipsum dolor sit amet ",
       "category":"accessories",
         "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019442/utilities/s-l640_guip0o.jpg",
         "star": 5.0, 
       "sold": 99
-  
-    }
-    ,
-      {
-       "id":"7",
-      "name": "wireless Microphone",
-      "price": 75.00,
-      "flashsale":true,
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum rem earum, iusto adipisci laboriosam modi odio nostrum labore ipsam magn",
-      "category":"accessories",
-      "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019441/utilities/61ZVeptsN0L._AC_UL210_SR210_210__nlc699.jpg",
-      "star": 5.0, 
-      "sold": 99
-  
-    }
+   },
+   {
+    "id":"6",
+    "name": "Smart TV",
+    "price": 48.00,
+    "description":"Lorem ipsum dolor sit amet .",
+    "limitedOffer":true,
+    "category":"computer & laptop",
+    "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019447/utilities/SLE32S700TCS-2_p6bkdc.jpg",
+    "star": 5.0, 
+    "sold": 99
+  },
+  {
+    "id":"7",
+    "name": "Samungung Z Fold",
+    "price": 1000.00,
+    "description":"Lorem ipsum dolor sit amet .",
+    "flashsale":true,
+    "category":"camera",
+    "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019445/utilities/samsung-galaxy-z-fold-4_wlnktk.jpg",
+    "star": 5.0, 
+    "sold": 99
     
+  },
+   {
+    "id":"8",
+    "name": "USB Speaker",
+    "price": 100.00,
+    "description":"Lorem ipsum dolor sit amet .",
+    "limitedOffer":true,
+    "category":"computer & laptop",
+    "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019445/utilities/Computer-Speakers-Wired-PC-Speaker-2-0-USB-Gaming-Powered-Stereo-Mini-Multimedia-Volume-Control-with-RGB-Lights-3-5mm-Aux-Input_8e920b0f-5117-4062-a6e1-d962629cfa2f.54df277348bbaf3f72a26ac3fd8afc6b_rpoqfu.webp",
+    "star": 5.0, 
+    "sold": 99
+
+  },
+  {
+    "id":"9",
+    "name": "Smart TV",
+    "price": 48.00,
+    "description":"Lorem ipsum dolor sit amet .",
+    "limitedOffer":true,
+    "category":"computer & laptop",
+    "img":"https://res.cloudinary.com/dcb4ilgmr/image/upload/v1694019447/utilities/SLE32S700TCS-2_p6bkdc.jpg",
+    "star": 5.0, 
+    "sold": 99
+  }
   ]
   

@@ -27,11 +27,11 @@ const category = [
 const Category = () => {
   return (
     <section className='my-20'>
-      <h3 className='font-bold text-lg text-colorBold my-3'>Categories</h3>
+      <h2 className='font-bold text-3xl text-center text-colorNormal my-3'>Categories</h2>
       <div className='flex flex-wrap lg:flex-nowrap justify-between gap-3'>
         {category.map((category, index) => (
          <Link key={index} href={category.link}>
-         <div className='flex lg:flex-row flex-col w-[100px] lg:w-auto text-center lg:text-left items-center gap-1 p-2 border border-colorNormal rounded-lg cursor-pointer'>
+         <div className='flex lg:flex-wrap flex-col w-[100px] lg:w-auto text-center lg:text-left items-center gap-1 p-2 border border-colorNormal rounded-lg cursor-pointer'>
            <Image src={category.img} alt="" width={30} height={30} />
            <span className='text-[13px] text-colorBold font-[Poppins] lg:pr-4'>{category.name}</span>
          </div>

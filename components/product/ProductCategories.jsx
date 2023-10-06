@@ -7,7 +7,7 @@ import beauty from '../../public/assets/category/beauty.svg'
 import devices from '../../public/assets/category/devices.svg'
 import sports from '../../public/assets/category/sports.svg'
 import fastfood from '../../public/assets/category/fastfood.svg'
-import Partners from '../home/Partners'
+
 import ProductList from './ProductList'
 import custom from '../../public/assets/category/custom.svg'
 import toys from '../../public/assets/category/toys.svg'
@@ -27,7 +27,7 @@ const category = [
 const ProductCategories = () => {
   return (
     <div className='w-[100%] lg:w-[75%]' >
-      <div className='grid grid-cols-2 lg:grid-cols-4 gap-2 place-content-between'>
+      <div className='flex flex-col-flex-wrap gap-2 place-content-between'>
         {category.map((item, index) => (
           <div key={index} className='flex flex-col w-[150px] lg:w-[200px] p-3 items-center text-center gap-1 border border-colorNormal rounded-lg cursor-pointer'>
             <Image src={item.img} alt={item.name} width={30} height={30}/>

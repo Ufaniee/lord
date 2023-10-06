@@ -24,7 +24,7 @@ const Sidebar = () => {
 
 
   return (
-    <div className='w-[23%] hidden lg:flex flex-col gap-4 p-6 border border-[#A7A7A7] rounded-2xl'>
+    <div className='w-[23%] h-[75%] hidden lg:flex flex-col gap-4 p-6 border border-[#A7A7A7] rounded-2xl'>
         <h2 className='font-bold'>All Categories</h2>
 
         {/* Listing Categories */}
@@ -85,7 +85,7 @@ const Sidebar = () => {
                 {Array.from({length: 5}).map((item, i) => (
                     <div key={i} className='flex flex-row items-center text-lg gap-1'>
                         <input type="checkbox" className='accent-primary'/>
-                        {Array.from({length: i + 1}).map((item, j) => ( <MdStarRate key={j} className='text-primary'/> ))}
+                        {Array.from({length: i + 1}).map((item, j) => ( <MdStarRate key={j} className='text-yellow'/> ))}
                     </div>
                 ))}
             </form> 

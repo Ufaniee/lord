@@ -4,7 +4,7 @@ import { MdStarRate } from "react-icons/md";
 
 const ProductReview = () => {
   return (
-    <div className='flex flex-col gap-4 text-colorBold'>
+    <div className='flex flex-col gap-4 text-colorNormal'>
       <div className='flex items-end gap-4'>
         <div className='w-[50px] h-[50px] bg-gray'></div>
         <div className='flex flex-col'>
@@ -13,7 +13,7 @@ const ProductReview = () => {
             <span className='text-primary'>5.0</span>
             <span className='flex gap-1'>
                 {Array.from({length: 5}).map((star, index) => (
-                    <MdStarRate key={index} className='text-primary'/>
+                    <MdStarRate key={index} className='text-yellow'/>
                   ))}
             </span>
           </div>
