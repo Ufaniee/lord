@@ -13,7 +13,7 @@ import logo from '../../public/assets/siteLogo.jpg'
 
 const TopHeader = () => {
   return (
-    <header className='lg:flex justify-between items-center py-3 border-b border-colorNormal'>
+    <header className='flex w-[100] justify-between items-center border-colorNormal'>
       <Link href='/'>
             <Image src={logo} alt="logo" width={58} height={58}/>
         </Link>

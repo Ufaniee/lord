@@ -32,20 +32,14 @@ const featuredProducts = [
     promoPrice: 19.99,
     image:
       "Images/81.jpg",
-  },{
-    name: "Wireless Microphone",
-    price: 29.99,
-    promoPrice: 19.99,
-    image:
-      "Images/91.jpg",
   },
 ];
 
 const Featured = () => {
   return (
     <section className="lg:flex lg:flex-col w-full lg:justify-evenly my-20 lg:my-10">
-      <div className="flex flex-row items-start gap-0">
-        <div className="lg:w-[25%] w-full gap-0">
+      <div className="flex flex-row items-start ">
+        <div className="lg:flex-[25%] w-full ">
           <div
             className="lg:w-[400px] h-[250px] w-full border rounded-lg"
             style={{
@@ -61,19 +55,19 @@ const Featured = () => {
                 Source Now
               </h2>
             </div>
-            <div className="text-centre text-m ml-5 mb-12">
+            <div className="text-centre text-m ">
               {/* Promo Timing */}
               <Timing days={4} hrs={2} min={18} sec={27} />
             </div>
                 
           </div>
         </div>
-      <div className="flex lg:w-[75%] gap-[1] w-full flex-wrapp ml-11 lg:items-start items-center ">
+      <div className="lg:flex-[75%] gap-[1] w-full flex flex-wrap overflow-hidden lg:items-start items-center ">
         {featuredProducts.map((item, index) => (
 
           <div
-            key={index} ml-10 
-            className="flex flex-col mt-1 flex-wrap items-center gap-2 border border-gray rounded-lg"
+            key={index}
+            className="flex flex-col mt-1 w-[25%] flex-wrap items-center gap-2 overflow-hidden rounded-lg"
           >
             <div className="flex flex-col">
               <div className="flex-wrap flex-col w-[205px] h-[200px] ">

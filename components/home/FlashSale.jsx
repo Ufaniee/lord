@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import FlashSaleslider from "../sliders/flashsaleslider";
 
 const flashSale = [
    { id:"1", name: "Smartphone Camera", description:"",price: 1000.00, star: 5.0,sold: 99, img:'/Images/1.jpg' },
@@ -21,19 +20,19 @@ const flashSale = [
 
 const FlashSale = () => {
   return (
-    <section className="flex lg:w-[full] gap-[1] w-full flex-wrap lg:items-start items-center ">
+    <section className="flex w-[full] flex-wrap lg:items-start items-center ">
         {flashSale.map((item, index) => (
 
           <div
-            key={index} ml-10 
+            key={index}
             className="flex flex-col mt-1 flex-wrap items-center border border-gray rounded-lg"
           >
             <div className="flex flex-col">
-              <div className="flex-wrap flex-col w-{500px] h-[200px] ">
+              <div className="flex-wrap flex-col w-[215px] h-[200px] ">
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="w-[full] h-[full] object-center"
+                    className="w-[200px] h-[full] object-center"
                   />
             </div>
                       <h4 className="text-m text-center font-bold">{item.name}</h4>
@@ -43,21 +42,9 @@ const FlashSale = () => {
                     </div>
               </div>
           ))}
-
-          {/* Mobile View */}
-      {/* <div className='lg:hidden mx-auto my-0 relative overflow-hidden rounded-[32px]'> */}
-      <FlashSaleslider flashsale={flashsale} />
-      {/* {newArrival.map((item, index) => (
-                <div key={index} className='flex flex-col items-center gap-2 border border-gray rounded-b-2xl pb-5'>
-                    <div className='w-[350px] h-[250px] bg-gray relative'>
-                        <span className='bg-primary rounded-full p-2 absolute right-3 top-3'>New</span>
-                    </div>
-                    <h4>{item.name}</h4>
-                    <span className='text-primary'>${item.price}</span>
-                </div>
-            ))} */}
-      {/* </div> */}
+ 
       </section>
+         
   );
 };
 

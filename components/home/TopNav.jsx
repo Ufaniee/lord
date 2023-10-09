@@ -5,7 +5,7 @@ import Image from "next/image";
 const TopNav = () => {
   return (
     <section className=" border-b border-colorNormal">
-      <div className="hidden lg:flex justify-between items-center">
+      <div className="flex justify-between items-center">
         <div className="text-bold text-xl flex flex-wrap gap-5">
               <div className="./">
                 <h3 className="/">All Category</h3>
