@@ -1,8 +1,9 @@
 /** @format */
 
 import React from "react";
+import FlashSaleslider from "../sliders/flashsaleslider";
 
-const flashSaleProducts = [
+const flashSale = [
    { id:"1", name: "Smartphone Camera", description:"",price: 1000.00, star: 5.0,sold: 99, img:'/Images/1.jpg' },
    { id:"2", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'/Images/2.jpg' },
    { id:"5", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'/Images/3.jpg' },
@@ -21,7 +22,7 @@ const flashSaleProducts = [
 const FlashSale = () => {
   return (
     <section className="flex lg:w-[full] gap-[1] w-full flex-wrap lg:items-start items-center ">
-        {flashSaleProducts.map((item, index) => (
+        {flashSale.map((item, index) => (
 
           <div
             key={index} ml-10 
@@ -42,6 +43,20 @@ const FlashSale = () => {
                     </div>
               </div>
           ))}
+
+          {/* Mobile View */}
+      {/* <div className='lg:hidden mx-auto my-0 relative overflow-hidden rounded-[32px]'> */}
+      <FlashSaleslider flashsale={flashsale} />
+      {/* {newArrival.map((item, index) => (
+                <div key={index} className='flex flex-col items-center gap-2 border border-gray rounded-b-2xl pb-5'>
+                    <div className='w-[350px] h-[250px] bg-gray relative'>
+                        <span className='bg-primary rounded-full p-2 absolute right-3 top-3'>New</span>
+                    </div>
+                    <h4>{item.name}</h4>
+                    <span className='text-primary'>${item.price}</span>
+                </div>
+            ))} */}
+      {/* </div> */}
       </section>
   );
 };
