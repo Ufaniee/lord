@@ -6,6 +6,7 @@ import voucher from "../../public/assets/icons/voucher.svg";
 import mypackage from "../../public/assets/icons/package.svg"
 import Button from '../global/Button';
 import Image from 'next/image';
+import Others from './Others';
 
 
 const ProductInfo = ({id}) => {
@@ -80,6 +81,7 @@ const ProductInfo = ({id}) => {
         </div>
     </section>
   )
+  
 }
 
 export default ProductInfo
