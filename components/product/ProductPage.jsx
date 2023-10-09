@@ -3,7 +3,7 @@ import ProductHeader from './ProductHeader'
 import Sidebar from './Sidebar'
 import ProductCategories from './ProductCategories'
 import ProductList from './ProductList'
-import Others from './Others'
+
 
 const ProductPage = () => {
   return (
