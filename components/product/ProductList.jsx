@@ -8,26 +8,24 @@ import { FaAngleRight } from "react-icons/fa";
 import Button from "../global/Button";
 import ProductNotFound from "./ProductNotFound";
 import Link from "next/link";
-import products from "../../data/products.json";
 import Image from "next/image";
 
 
-// const products = [
-//   { id:"1", name: "Smartphone Camera", description:"",price: 1000.00, star: 5.0,sold: 99, img:'' },
-//   { id:"2", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"5", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"3", name: "Smartphone 5G", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"6", name: "Smartphone Con", price: 1000.00,star: 5.0, sold: 99, img:'' },
-//   { id:"7", name: "Smartphone Con",  price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"8", name: "Smartphone Camera", description:"",price: 1000.00, star: 5.0,sold: 99, img:'' },
-//   { id:"9", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"10", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"11", name: "Smartphone 5G", price: 1000.00, star: 5.0, sold: 99, img:'' },
-//   { id:"12", name: "Smartphone Con", price: 1000.00,star: 5.0, sold: 99, img:'' }
-// ]
+ const products = [
+   { id:"1", name: "Smartphone Camera", description:"",price: 1000.00, star: 5.0,sold: 99, img:'/Images/78.jpg' },
+   { id:"2", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'/Images/81.jpg' },
+   { id:"5", name: "Smartphone TV", price: 1000.00, star: 5.0, sold: 99, img:'/Images/91.jpg' },
+   { id:"3", name: "Smartphone 5G", price: 1000.00, star: 5.0, sold: 99, img:'/Images/11.jpg' },
+   { id:"6", name: "Smartphone Con", price: 1000.00,star: 5.0, sold: 99, img:'/Images/2.jpg' },
+   { id:"7", name: "Smartphone Con",  price: 1000.00, star: 5.0, sold: 99, img:'/Images/3.jpg' },
+   { id:"8", name: "Smartphone Camera", description:"",price: 1000.00, star: 5.0,sold: 99, img:'/Images/4.jpg' },
+   { id:"7", name: "Smartphone Con",  price: 1000.00, star: 5.0, sold: 99, img:'/Images/5.jpg' },
+   { id:"8", name: "Smartphone Camera", description:"",price: 1000.00, star: 5.0,sold: 99, img:'/Images/6.jpg' },
+ ]
 
 const ProductList = () => {
   return (
+    
     <div className=' w-[100%] lg:w-[100%' >
 
       <div className="flex flex-col ">

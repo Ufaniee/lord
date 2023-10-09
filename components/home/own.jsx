@@ -9,7 +9,7 @@ const newArrival = [
     price: 29.99,
     promoPrice: 19.99,
     image:
-      "Images/22.jpg",
+      "Images/62.jpg",
   },
   {name: "Shawama",
     price: 29.99,
@@ -62,7 +62,7 @@ const newArrival = [
 ]
 
 
-const NewArrival = () => {
+const Myown = () => {
   return (
     <section className="lg:flex lg:flex-col lg:flex-flow w-full lg:justify-evenly my-20 lg:my-10 ">
       <div className="flex flex-row items-start gap-0">
@@ -125,4 +125,4 @@ const NewArrival = () => {
   );
 };
 
-export default NewArrival;
+export default Myown;

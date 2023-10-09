@@ -4,6 +4,7 @@ import NavBar from './NavBar'
 import DownloadApp from './DownloadApp'
 import NewArrival from './NewArrival'
 import Featured from './Featured'
+import Myown from './own'
 import Newsletter from './Newsletter'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
@@ -21,6 +22,7 @@ const Home = () => {
           <MobileNav/>
           <Featured/>
           <NewArrival/>
+          <Myown/>
           <Collections/>
           <FlashSale/>
           <Newsletter/>

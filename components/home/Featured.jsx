@@ -5,32 +5,39 @@ import Timing from "../Timing";
 import FeaturedSlider from "../sliders/FeaturedSlider";
 
 const featuredProducts = [
+  
+  
   {
-    name: "Shawama",
+    name: "Wireless Microphone",
     price: 29.99,
     promoPrice: 19.99,
     image:
-      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1692852297/samples/shawma_s0w8sg.jpg",
+      "Images/62.jpg",
+  },{
+    name: "Wireless Microphone",
+    price: 29.99,
+    promoPrice: 19.99,
+    image:
+      "Images/71.jpg",
   },
   {
     name: "Wireless Microphone",
     price: 29.99,
     promoPrice: 19.99,
     image:
-      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1692852068/samples/mic_awwegv.webp",
-  },
-  {
-    name: "Curdde-Gold Watch",
+      "Images/78.jpg",
+  },{
+    name: "Wireless Microphone",
     price: 29.99,
     promoPrice: 19.99,
     image:
-      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1692852534/samples/202403_1653901816_bxj9ks.webp",
-  },
-  {name: "Shawama",
+      "Images/81.jpg",
+  },{
+    name: "Wireless Microphone",
     price: 29.99,
     promoPrice: 19.99,
     image:
-      "https://res.cloudinary.com/dcb4ilgmr/image/upload/v1692852297/samples/shawma_s0w8sg.jpg",
+      "Images/91.jpg",
   },
 ];
 
@@ -38,9 +45,9 @@ const Featured = () => {
   return (
     <section className="lg:flex lg:flex-col w-full lg:justify-evenly my-20 lg:my-10">
       <div className="flex flex-row items-start gap-0">
-        <div className="lg:w-[30%] w-full gap-0">
+        <div className="lg:w-[25%] w-full gap-0">
           <div
-            className="lg:w-[500px] h-[350px] w-full border rounded-lg"
+            className="lg:w-[400px] h-[250px] w-full border rounded-lg"
             style={{
               backgroundImage:
                 "url('https://res.cloudinary.com/dcb4ilgmr/image/upload/v1693025124/utilities/black-background-with-gold-black-ornate-frames-black-background_901003-2957_vqykxi.avif')",
@@ -54,22 +61,22 @@ const Featured = () => {
                 Source Now
               </h2>
             </div>
-            <div className="text-centre text-m ml-10 p-10">
+            <div className="text-centre text-m ml-5 mb-12">
               {/* Promo Timing */}
               <Timing days={4} hrs={2} min={18} sec={27} />
             </div>
                 
           </div>
         </div>
-      <div className="flex lg:w-[70%] gap-[1] w-full flex-wrap ml-10 pl-10 lg:items-start items-center ">
+      <div className="flex lg:w-[75%] gap-[1] w-full flex-wrapp ml-11 lg:items-start items-center ">
         {featuredProducts.map((item, index) => (
 
           <div
-            key={index}
+            key={index} ml-10 
             className="flex flex-col mt-1 flex-wrap items-center gap-2 border border-gray rounded-lg"
           >
             <div className="flex flex-col">
-              <div className="flex-wrap flex-col w-[227px] h-[300px] ">
+              <div className="flex-wrap flex-col w-[205px] h-[200px] ">
                   <img
                     src={item.image}
                     alt={item.name}
